@@ -6,7 +6,7 @@ This package implements extended direct histograms (EDH) and finite-domain exten
 
 ## Installation
 
-Use Python 3.11 or newer. Run the following commands from the `Code` directory.
+Use Python 3.11 or newer. Run the following commands from the repository root.
 
 ```bash
 python -m venv .venv
