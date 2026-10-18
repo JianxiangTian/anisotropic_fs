@@ -1,0 +1,176 @@
+{
+  "version": "0.1.0",
+  "validation_date": "2026-10-18",
+  "python": "3.12.14",
+  "platform": "Windows 10",
+  "checks": {
+    "numerical_tests": {
+      "count": 6,
+      "status": "passed",
+      "tests": [
+        "archived per-frame EDH/EFS and normalizations for all three models",
+        "primary endpoint reconstructed from all moment blocks",
+        "3D force and torque finite differences",
+        "exact planar energy/force/torque restriction",
+        "finite-shell kernel quadrature for dimensions 2,3,4,5,8",
+        "invalid estimator domains rejected"
+      ]
+    },
+    "trajectory_cli_on_three_saved_configurations": "passed",
+    "data_source_mapping": "all bundled data files mapped",
+    "data_arrays": {
+      "status": "passed",
+      "count": 13,
+      "object_arrays": false,
+      "nonfinite_values": false
+    },
+    "full_statistical_reproduction": {
+      "status": "passed",
+      "comparison_rtol": 1e-09,
+      "comparison_atol": 1e-11,
+      "table_II": [
+        {
+          "system": "2D dimers",
+          "observable": "radial",
+          "design": "contiguous",
+          "target": 0.005,
+          "EDH_M": 500,
+          "EFS_M": 200,
+          "ratio": 2.5
+        },
+        {
+          "system": "2D dimers",
+          "observable": "radial",
+          "design": "dispersed_without_replacement",
+          "target": 0.005,
+          "EDH_M": 500,
+          "EFS_M": 200,
+          "ratio": 2.5
+        },
+        {
+          "system": "2D dimers",
+          "observable": "joint",
+          "design": "contiguous",
+          "target": 0.02,
+          "EDH_M": 2000,
+          "EFS_M": 1000,
+          "ratio": 2.0
+        },
+        {
+          "system": "2D dimers",
+          "observable": "joint",
+          "design": "dispersed_without_replacement",
+          "target": 0.02,
+          "EDH_M": 2000,
+          "EFS_M": 1000,
+          "ratio": 2.0
+        },
+        {
+          "system": "2D Gay-Berne",
+          "observable": "radial",
+          "design": "contiguous",
+          "target": 0.005,
+          "EDH_M": 1000,
+          "EFS_M": 500,
+          "ratio": 2.0
+        },
+        {
+          "system": "2D Gay-Berne",
+          "observable": "radial",
+          "design": "dispersed_without_replacement",
+          "target": 0.005,
+          "EDH_M": 1000,
+          "EFS_M": 500,
+          "ratio": 2.0
+        },
+        {
+          "system": "2D Gay-Berne",
+          "observable": "joint",
+          "design": "contiguous",
+          "target": 0.02,
+          "EDH_M": 5000,
+          "EFS_M": 2000,
+          "ratio": 2.5
+        },
+        {
+          "system": "2D Gay-Berne",
+          "observable": "joint",
+          "design": "dispersed_without_replacement",
+          "target": 0.02,
+          "EDH_M": 5000,
+          "EFS_M": 2000,
+          "ratio": 2.5
+        },
+        {
+          "system": "3D Gay-Berne",
+          "observable": "radial",
+          "design": "contiguous",
+          "target": 0.005,
+          "EDH_M": 500,
+          "EFS_M": 100,
+          "ratio": 5.0
+        },
+        {
+          "system": "3D Gay-Berne",
+          "observable": "radial",
+          "design": "dispersed",
+          "target": 0.005,
+          "EDH_M": 500,
+          "EFS_M": 100,
+          "ratio": 5.0
+        },
+        {
+          "system": "3D Gay-Berne",
+          "observable": "joint",
+          "design": "contiguous",
+          "target": 0.02,
+          "EDH_M": 2000,
+          "EFS_M": 1000,
+          "ratio": 2.0
+        },
+        {
+          "system": "3D Gay-Berne",
+          "observable": "joint",
+          "design": "dispersed",
+          "target": 0.02,
+          "EDH_M": 2000,
+          "EFS_M": 1000,
+          "ratio": 2.0
+        }
+      ],
+      "scope": [
+        "Primary bootstrap means, SEs, p values and confidence intervals",
+        "Planar independent-reference bootstrap and percentile confidence bounds",
+        "3D reference multiplier errors and compatibility",
+        "3D paired RMS confidence bounds",
+        "3D primary cross-seed and secondary Holm families"
+      ]
+    },
+    "figures": {
+      "status": "passed",
+      "count": 9,
+      "formats": [
+        "EPS",
+        "PDF",
+        "PNG"
+      ],
+      "font": "Times New Roman"
+    }
+  },
+  "packages": {
+    "contourpy": "1.4.0",
+    "cycler": "0.12.1",
+    "fonttools": "4.67.0",
+    "kiwisolver": "1.5.1",
+    "llvmlite": "0.50.0",
+    "matplotlib": "3.11.2",
+    "numba": "0.68.0",
+    "numpy": "2.5.4",
+    "packaging": "26.3",
+    "pillow": "13.0.0",
+    "pyparsing": "3.3.3",
+    "python-dateutil": "2.9.0.post0",
+    "scipy": "1.18.1",
+    "six": "1.17.0"
+  }
+}

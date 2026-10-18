@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "frozen_at": "2026-10-15T06:20:45.068654+08:00",
+  "scope": "Primary split only; reference 410131+410132 EDH, test 410133. Existing stage3 results known; not a blind theoretical confirmation.",
+  "M": [
+    50,
+    100,
+    200,
+    500,
+    1000,
+    2000,
+    5000,
+    10000,
+    20000
+  ],
+  "repeats": 200,
+  "sample_rng": 810145,
+  "interval_rng": 810146,
+  "bootstrap_repeats": 2000,
+  "sampling": {
+    "contiguous": "For each M independently, 200 starts iid uniform integers 0..80000-M inclusive. Each draw uses consecutive M saved frames. Repeated starts allowed and recorded.",
+    "dispersed": "For each M independently, 200 subsets, each M distinct frame indices uniformly without replacement from all 80000 test frames. Sort indices for reading only. Subsets across repeats may overlap.",
+    "pairing": "EDH and EFS use exactly the same frame indices for each repeat. No outcome-based exclusions. All samples kept including negative EFS estimates.",
+    "order": "ascending M; contiguous starts then dispersed subsets for each M; one numpy.default_rng stream; save exact arrays before analysis"
+  },
+  "estimation": "Use unchanged gb3d_estimators.estimate on full domain [0.55,6] then retain bins wholly within [0.9,5.5], channels0:128 angular plus128 radial. Float64. Per-frame values averaged, never use 100-frame means as individual frames.",
+  "reference": "equal average of both 80000-frame EDH reference means; no test frames and no EFS as truth",
+  "loss": "Weighted NRMSE, squared weights shell volume normalized across selected radial bins and 1/128 angular measure. Denominator fixed norm of pooled EDH reference. No occupancy mask.",
+  "report": "Per M/mode/method/channel retain all 200 errors; report sqrt(mean(error^2)), mean error, empirical 2.5/50/97.5 percentiles and threshold hit fraction. Quantiles are a conditional sampling range, not a confidence interval for equilibrium truth.",
+  "intervals": "Paired resampling of 200 repeat indices, 2000 draws. Percentile 95% interval of sqrt(mean(error^2)), and EFS/EDH RMS-error ratio. These quantify finite repeat Monte Carlo uncertainty conditional on the fixed 80000-frame test pool and estimated reference; they do NOT make overlapping windows independent physical samples or include between-chain uncertainty.",
+  "reference_uncertainty": "Report separate conservative triangle envelopes max(0,error-u95)..error+u95 using maximum reference error norm95 over blocks500/1000/2000/4000. Not a joint95% confidence band. Keep all block sensitivity and compatibility results.",
+  "thresholds": {
+    "radial": 0.005,
+    "angular": 0.02
+  },
+  "sample_savings": "Only sampled M grid, no interpolation/extrapolation. First M whose upper conditional RMS-error CI plus max reference u95 lies below target and stays below at all larger tested M. If none, report >20000. Ratios explicitly conditional on this test chain and sampling design, not universal. Retain unresolved stage3 seed residual difference.",
+  "cost": "Dispersed draws require access to an 80000-frame chain even when M is small. Report selected NC, source span and original simulation cost separately; do not claim shorter acquisition from dispersed M alone.",
+  "resume": "Immutable per100-frame cache files, validate every block against existing estimator100 means before committing atomic status. Never restart when worker alive; failed partial output preserved and recovery audited.",
+  "pending": "Leave-one-out rotations exploratory and not implemented in this primary run. Full-chain uncertainty not established by repeat intervals."
+}

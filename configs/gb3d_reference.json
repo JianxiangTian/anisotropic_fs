@@ -1,0 +1,31 @@
+{
+  "frozen_at": "2026-10-15T06:18:22.805626+08:00",
+  "scope": "Step4 reference adequacy only, prospective algorithm after stage3 diagnostics; not blind confirmation. Efficiency resampling protocol remains to be frozen before efficiency calculation.",
+  "reference_seeds": [
+    410131,
+    410132
+  ],
+  "test_seed_excluded": 410133,
+  "frames_each": 80000,
+  "block_sizes": [
+    500,
+    1000,
+    2000,
+    4000
+  ],
+  "channels": {
+    "radial": 128,
+    "angular": "0:128"
+  },
+  "domain": "bins wholly within [0.9,5.5], shell-volume weights normalized; angular weights 1/128",
+  "reference": "equal average of two EDH seed means",
+  "uncertainty": "weighted RMS standard error from sum of seed block variances / (4*nblocks); also Gaussian centered-block multiplier 95th percentile norm of reference error with 2000 draws; use full covariance through weighted Gram matrix",
+  "compatibility": "weighted RMS seed1 minus seed2 compared to centered Gaussian block multiplier null difference, two-sided via norm upper tail; p=(1+count(null>=observed))/2001; exploratory diagnostic p<.05 flag per channel/block, all reported",
+  "rng_seed": 810144,
+  "targets": {
+    "radial": 0.005,
+    "angular": 0.02
+  },
+  "adequacy_rule": "95th percentile reference error norm / norm(reference) < target/3 at all four blocks; report any compatibility flags and lack of stable block errors; no efficiency savings claim if unresolved",
+  "limits": "Gaussian multiplier/block independence approximation, not guaranteed confidence coverage; two seeds cannot establish universal reference validity. No test data or EFS used."
+}

@@ -1,0 +1,40 @@
+{
+  "version": "JCP completion v1 fixed before new production",
+  "date": "2026-10-11",
+  "seeds": [
+    410131,
+    410132,
+    410133
+  ],
+  "N": 1024,
+  "rho": 0.05,
+  "T": 2.0,
+  "original_equil_sweeps": 40000,
+  "stride_sweeps": 10,
+  "existing_frames_each": 20000,
+  "additional_frames_each": 60000,
+  "total_frames_per_seed": 80000,
+  "segments_each": 6,
+  "segment_frames": 10000,
+  "continuation": "Continue last saved state with fixed original production step/turn, no readaptation or extra discarded equilibration. Distinct new RNG streams seed+200000+1000*segment, segment1..6, are not new physical seeds. Original and appended raw files retained separately. Smoke test is excluded.",
+  "endpoint": "Fixed 80000 frames each regardless of interim sign, p value or interval. Monitor integrity and progress only. Do not stop when significant/nonsignificant or when equivalence first passes. Any later extension needs a new recorded protocol, not silent endpoint change.",
+  "primary": "Original paired EFS-EDH P2(ui dot uj) shell moment, shell[0.9,1.5], original radial domain[0.55,6], width0.05, equal mean of three seed means. Preserve original 500-frame stratified bootstrap-t 20000 resamples RNG810134; 95% interval and two-sided p; absolute diagnostic margin +/-0.00075. No old N2048 included.",
+  "segments_reporting": "Report original20k unchanged, new60k alone, combined80k, every10k segment, halves and quarters. New segment follows old state and is not an independent trajectory or fully blind test; no data deletion based on diagnostics.",
+  "block_sensitivity": [
+    100,
+    200,
+    500,
+    1000,
+    2000,
+    4000
+  ],
+  "robustness_rule": "Do not declare robust precision merely because primary500 passes if1000/2000/4000 intervals materially broaden or leave margin. Report lack of plateau as unresolved; do not select the most favorable block size. Original primary result is always retained.",
+  "secondary": "Five moments in four original radial shells for each seed, Holm60 family. Individual primary Holm3. Torque24 and angular1536 families separately exploratory. Energy,S2,Q,lowest-wavevector real/imaginary density AND density power: ACF, ESS, block errors, time segments, target correlation. Nominal correlation p values are exploratory and not causal evidence. Check continued-state continuity, coordinate/unit-axis integrity, physical core samples and code hashes.",
+  "step4_plan": "Primary independent reference: physical seeds410131+410132 EDH, test410133 EFS/EDH; no reference/test frame overlap and no use of EFS as truth. Leave-one-seed-out rotations exploratory. Same d=3 measure and original 0.05 radial,4x4x8 angular resolution; r bins wholly within[0.9,5.5]. Relative RMS=sum(volume*angular measure*(estimate-reference)^2)/sum(volume*angular measure*reference^2), square root. No occupancy mask for primary. Thresholds radial0.5%,full angular2%, not the primary angular-moment absolute margin. M=50,100,200,500,1000,2000,5000,10000,20000; contiguous and dispersed repeated sampling. Freeze exact randomization and uncertainty algorithm before computing efficiencies. Reference block500/1000/2000/4000 sensitivity; require reference uncertainty less than target/3 and reference-seed compatibility, otherwise report unresolved precision rather than sample savings. No new independent seed until this adequacy review.",
+  "step_definition": {
+    "1": "Existing20k statistical review and sampling budget complete",
+    "2": "Fixed extension MC and estimator outputs, then integrity review",
+    "3": "Predefined stopping/analysis protocol frozen before step2; step completes after new-only/combined comparisons and scientific review",
+    "4": "Independent-reference sample efficiency and report"
+  }
+}

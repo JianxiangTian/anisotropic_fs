@@ -1,0 +1,40 @@
+{
+  "checks": {
+    "2": {
+      "radial_point_error": 2.220446049250313e-16,
+      "shell_average_error": 4.440892098500626e-16,
+      "coupled_angular_lhs": 0.08884670001650036,
+      "coupled_angular_rhs": 0.08884670001571048,
+      "coupled_angular_error": 7.898820486573754e-13
+    },
+    "3": {
+      "radial_point_error": 2.220446049250313e-16,
+      "shell_average_error": 2.220446049250313e-16,
+      "coupled_angular_lhs": 0.06741364691195319,
+      "coupled_angular_rhs": 0.06741364691195317,
+      "coupled_angular_error": 1.3877787807814457e-17
+    },
+    "4": {
+      "radial_point_error": 0.0,
+      "shell_average_error": 6.661338147750939e-16,
+      "coupled_angular_lhs": 0.04831217718614341,
+      "coupled_angular_rhs": 0.048312177186143786,
+      "coupled_angular_error": 3.7470027081099033e-16
+    },
+    "5": {
+      "radial_point_error": 0.0,
+      "shell_average_error": 2.220446049250313e-16,
+      "coupled_angular_lhs": 0.03548807617072662,
+      "coupled_angular_rhs": 0.035488076170726635,
+      "coupled_angular_error": 1.3877787807814457e-17
+    },
+    "8": {
+      "radial_point_error": 2.220446049250313e-16,
+      "shell_average_error": 1.1102230246251565e-15,
+      "coupled_angular_lhs": 0.016825976279278468,
+      "coupled_angular_rhs": 0.016825976279530613,
+      "coupled_angular_error": 2.5214552668018086e-13
+    }
+  },
+  "scope": "Nontrivial coupled two-axis Boltzmann weight, eigenvalue4d; independent quadrature. Not a full implementation of 3D spectral reconstruction."
+}

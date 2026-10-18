@@ -1,0 +1,671 @@
+[
+  {
+    "source": "scripts/dimer_mc.py",
+    "source_sha256": "6232db2e24f9be06dede720728f98bd68382207f331abd08a79b42101be11170",
+    "release": "src/anisotropic_fs/legacy/dimer_mc.py",
+    "transformation": "Relative imports and current-working-directory path base only; all function ASTs unchanged."
+  },
+  {
+    "source": "scripts/gb_pair.py",
+    "source_sha256": "93b64510ce0aceff6d3611c9804fced0e8ee5047c4d4f5c53b7eecbe7b4e5da6",
+    "release": "src/anisotropic_fs/legacy/gb_pair.py",
+    "transformation": "Relative imports and current-working-directory path base only; all function ASTs unchanged."
+  },
+  {
+    "source": "scripts/gb_mc.py",
+    "source_sha256": "e2f0456f9ee924265f58d5dd2911ef8a0c058e6ae77bd4ab7b99d4937aad83aa",
+    "release": "src/anisotropic_fs/legacy/gb_mc.py",
+    "transformation": "Relative imports and current-working-directory path base only; all function ASTs unchanged."
+  },
+  {
+    "source": "scripts/gb3d_pair.py",
+    "source_sha256": "c9208171bc5ddd3985a5e3bcef89d048fe7e8a648ec47e500e33815d00721e4b",
+    "release": "src/anisotropic_fs/legacy/gb3d_pair.py",
+    "transformation": "Relative imports and current-working-directory path base only; all function ASTs unchanged."
+  },
+  {
+    "source": "scripts/gb3d_mc.py",
+    "source_sha256": "78283b3343b41ce76da68d7871449f562981a3d12750a1085782f3a1b718b522",
+    "release": "src/anisotropic_fs/legacy/gb3d_mc.py",
+    "transformation": "Relative imports and current-working-directory path base only; all function ASTs unchanged."
+  },
+  {
+    "source": "scripts/joint_estimators.py",
+    "source_sha256": "7a53a4a9ada7ce17e7a784401fc6db73dd8b5b12c497871d029fa72844219f66",
+    "release": "src/anisotropic_fs/legacy/joint_estimators.py",
+    "transformation": "Relative imports and current-working-directory path base only; all function ASTs unchanged."
+  },
+  {
+    "source": "scripts/gb_estimators.py",
+    "source_sha256": "ccf54503d0c9877e9356844df1522915320103e6dd3e6da7966c004609216828",
+    "release": "src/anisotropic_fs/legacy/gb_estimators.py",
+    "transformation": "Relative imports and current-working-directory path base only; all function ASTs unchanged."
+  },
+  {
+    "source": "scripts/gb3d_estimators.py",
+    "source_sha256": "1b713791866c09a6b1a8579e9300a2acdacfdedd00786f83543fb10ffea8de29",
+    "release": "src/anisotropic_fs/legacy/gb3d_estimators.py",
+    "transformation": "Relative imports and current-working-directory path base only; all function ASTs unchanged."
+  },
+  {
+    "source": "scripts/review_gb3d_n1024.py",
+    "source_sha256": "56c6bb1a2d15df866a3dc2389911de05db6d81e44158c4c3866b37060fe5260c",
+    "release": "src/anisotropic_fs/statistics.py",
+    "transformation": "Extracted holm/grouped/stats/boot function ASTs only, unchanged."
+  },
+  {
+    "source": "Analysis/production_N2048_rho030/estimators.npz",
+    "source_sha256": "c9b7226f4a669ead47ca33e12f30d62a12a92859c12f7328fea4057553b72f4f",
+    "release": "data/blocks/dimer2d_demo.npz",
+    "transformation": "All 100-frame radial block means plus gamma-cell 0 slices nearest r=1.25 and r=2.5; no discarded blocks, float64."
+  },
+  {
+    "source": "Analysis/gb_production_v1/estimators.npz",
+    "source_sha256": "db469179813122c12aa3ff8f9badef16041bada55bdc005e2ffa40c18d7d146b",
+    "release": "data/blocks/gb2d_demo.npz",
+    "transformation": "All 100-frame radial block means plus gamma-cell 0 slices nearest r=1.25 and r=2.5; no discarded blocks, float64."
+  },
+  {
+    "source": "Analysis/sample_efficiency_v1/reference1/estimators.npz",
+    "source_sha256": "84318debf7cf612edaf21109d61a776a2c69323d424873d08df59d5c1225b6d3",
+    "release": "data/blocks/dimer2d_reference500.npz",
+    "transformation": "EDH radial mode 0 and full angular cells, original evaluation mask, grouped to 500-frame blocks."
+  },
+  {
+    "source": "Analysis/sample_efficiency_v1/reference2/estimators.npz",
+    "source_sha256": "f26d6dba18af48d32ec1595642acbe5bfc8875bdb161f61e9652c7167464a54f",
+    "release": "data/blocks/dimer2d_reference500.npz",
+    "transformation": "EDH radial mode 0 and full angular cells, original evaluation mask, grouped to 500-frame blocks."
+  },
+  {
+    "source": "Analysis/gb_multiseed_v1/reference1/estimators.npz",
+    "source_sha256": "038d1f3859d03b5a33121df8127cca2e13cba1fab9e67e9f5872690ae9462d5b",
+    "release": "data/blocks/gb2d_reference500.npz",
+    "transformation": "EDH radial mode 0 and full angular cells, original evaluation mask, grouped to 500-frame blocks."
+  },
+  {
+    "source": "Analysis/gb_multiseed_v1/reference2/estimators.npz",
+    "source_sha256": "9083ba3d62925ae5dbe62e3e6a7f14adf8a2ff31d91a7e7d87bfb6e6fcc020d0",
+    "release": "data/blocks/gb2d_reference500.npz",
+    "transformation": "EDH radial mode 0 and full angular cells, original evaluation mask, grouped to 500-frame blocks."
+  },
+  {
+    "source": "Analysis/gb3d_n1024_multiseed_v1/seed410131_20000/estimators.npz",
+    "source_sha256": "7b2c731fc72d3dd00ebb828edbc66b27336a0208ce0d2977453de0e7fdb12b62",
+    "release": "data/blocks/gb3d_410131_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410131/segment1/estimators.npz",
+    "source_sha256": "3554815ebec565107b3d6c1a15d62b848b8a24de463525ee603f83c2f6fec1df",
+    "release": "data/blocks/gb3d_410131_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410131/segment2/estimators.npz",
+    "source_sha256": "5fd638f6951640da10fdb83f1c81062e8d1ed1aeb05c30a82f4206527bc0ce63",
+    "release": "data/blocks/gb3d_410131_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410131/segment3/estimators.npz",
+    "source_sha256": "fa924eddc6fd718b5e50e8d23d15ab5c0946f5d206cf0469c27b6816fb86e28b",
+    "release": "data/blocks/gb3d_410131_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410131/segment4/estimators.npz",
+    "source_sha256": "36f8417958fe2fc7fc5c704bada6c6cd4b02125215100fabc4a2ebb71f2eecf0",
+    "release": "data/blocks/gb3d_410131_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410131/segment5/estimators.npz",
+    "source_sha256": "8d81232327000cfc006cd444cebec2c4d1999be3a5820bb4c7d5e5bf8984a48a",
+    "release": "data/blocks/gb3d_410131_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410131/segment6/estimators.npz",
+    "source_sha256": "1f6efc2601eedb8461f42b73c9defe42d4cc945e352eac91cde0159027085fd2",
+    "release": "data/blocks/gb3d_410131_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_n1024_multiseed_v1/seed410132_20000/estimators.npz",
+    "source_sha256": "d98f20bc5a82d171cf74a0f95c6ca0f4c7d2877f95fb20c1db3db2eb63e62f7f",
+    "release": "data/blocks/gb3d_410132_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410132/segment1/estimators.npz",
+    "source_sha256": "243d29c6123447eda767a4b95dc92ef1c7c5c945cb9af81e8af6d7e169a362de",
+    "release": "data/blocks/gb3d_410132_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410132/segment2/estimators.npz",
+    "source_sha256": "5817fbc1e431f9a415d7b4e871b9d7784917a7f148bc8e8142072de423a2636b",
+    "release": "data/blocks/gb3d_410132_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410132/segment3/estimators.npz",
+    "source_sha256": "4cec0c8c919545956f0206fcdbb7143897d740d7a32c7a9cdb3d9d58763f4e29",
+    "release": "data/blocks/gb3d_410132_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410132/segment4/estimators.npz",
+    "source_sha256": "5c353b6ded68769bea3048cd217ba76fd93ab59a9a0eaedd1373d0e403169a68",
+    "release": "data/blocks/gb3d_410132_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410132/segment5/estimators.npz",
+    "source_sha256": "18375e090ad2ad0b4b1bc74f5c8dcc7acfd0b0a65fafbbf457af238caf4c4157",
+    "release": "data/blocks/gb3d_410132_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410132/segment6/estimators.npz",
+    "source_sha256": "5b377a33bd0c1fdf6094b7add38979ce86539f33f49ef963d263668c30cee33f",
+    "release": "data/blocks/gb3d_410132_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_n1024_multiseed_v1/seed410133_20000/estimators.npz",
+    "source_sha256": "50c33c322a10cbfe09802697e8b07b40bcdc75d0e2dbee7e67660ed5b7df9401",
+    "release": "data/blocks/gb3d_410133_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410133/segment1/estimators.npz",
+    "source_sha256": "f2d4f05fd3bacff8b91aa1b7ca64d23deec9c33f5efba4a87ee33693c3c6a709",
+    "release": "data/blocks/gb3d_410133_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410133/segment2/estimators.npz",
+    "source_sha256": "ee643a6898111a08e5a74102cbafc97cbe651d789f6950294b9f3344379f6202",
+    "release": "data/blocks/gb3d_410133_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410133/segment3/estimators.npz",
+    "source_sha256": "799930133053c381a7d258b29684889376349370eff8e4837798125f56031091",
+    "release": "data/blocks/gb3d_410133_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410133/segment4/estimators.npz",
+    "source_sha256": "e463640e2ac4f3f356282e5e4f90c022af4188f8b1c2c3c240efa4e8575bc02c",
+    "release": "data/blocks/gb3d_410133_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410133/segment5/estimators.npz",
+    "source_sha256": "59c9824f430f7ef7cc20d2e2fd86d9d33d62221e2077f0e03ed61600153668bc",
+    "release": "data/blocks/gb3d_410133_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410133/segment6/estimators.npz",
+    "source_sha256": "3ec34c3a196b46edadbaf4f56d945631e882b19ebcd629bbddb8a53da947b59b",
+    "release": "data/blocks/gb3d_410133_moments100.npz",
+    "transformation": "Retained channels 128:133 (five moments), all radial bins and all blocks. Reference chains also supply 500-frame joint EDH blocks."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/stage3_features.npz",
+    "source_sha256": "4e7ce7545b47314ccdea7692790c4662020c29b94928139c34bd24f6156c67e7",
+    "release": "data/blocks/gb3d_coarse100.npz",
+    "transformation": "Lossless NPZ compression; every stored array retained."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/stage3_targets100.npz",
+    "source_sha256": "78e6e5564b85059867e375aaca0e28ce47ea7b09f60c967cdd16d5c4a6f12cef",
+    "release": "data/blocks/gb3d_targets100.npz",
+    "transformation": "Lossless NPZ compression; every stored array retained."
+  },
+  {
+    "source": "Analysis/sample_efficiency_v1/results.json",
+    "source_sha256": "9d9a8da43753dc321d5dcc343ca434bc0c41081c0a1ed76375aff033c948656e",
+    "release": "data/efficiency/dimer2d.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/sample_efficiency_v1/repeated_errors.csv",
+    "source_sha256": "34a7e4eec222481e8437136445d7abc89f32adf9ff96776b52834437cdca391d",
+    "release": "data/efficiency/dimer2d_errors.csv",
+    "transformation": "Unchanged per-repeat error values, both fixed-reference and resampled-reference columns."
+  },
+  {
+    "source": "Analysis/gb_multiseed_v1/results.json",
+    "source_sha256": "3f494e2ba91d8ffc65fa597d8a0fa98a881eb6b4c8e2aca0f22aa8755d786e28",
+    "release": "data/efficiency/gb2d.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/gb_multiseed_v1/repeated_errors.csv",
+    "source_sha256": "7e743fc112e6e45ab579a491cbede8e751ced4ba206c2beb82dc408b22c19d99",
+    "release": "data/efficiency/gb2d_errors.csv",
+    "transformation": "Unchanged per-repeat error values, both fixed-reference and resampled-reference columns."
+  },
+  {
+    "source": "Analysis/gb_efficiency_extended_v1/results.json",
+    "source_sha256": "550bb992d2de916545d59b5bcd6fe184e84d184e0cf6d9bea61427f336e6085a",
+    "release": "data/efficiency/gb2d_extended.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/gb_efficiency_extended_v1/repeated_errors.csv",
+    "source_sha256": "dfbfc25cd42319b9e45c2573c049c05cbcffca4a9886f770979892f24a3d3bd5",
+    "release": "data/efficiency/gb2d_extended_errors.csv",
+    "transformation": "Unchanged per-repeat error values, both fixed-reference and resampled-reference columns."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/stage3_primary_endpoint.json",
+    "source_sha256": "9f444536a8e516d1156901c9f94ff0eaf15b28267e3463af852fc4723c673c9b",
+    "release": "data/reported/primary_endpoint.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/stage3_secondary_endpoint.json",
+    "source_sha256": "efa92c02abdd1b0a52a7a2e5dbfd7f2fd4d0fb0132e062f186cbc1047d1abfc9",
+    "release": "data/reported/secondary_endpoint.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/stage3_seed_decomposition.json",
+    "source_sha256": "519d1d83ce0cd98aec7e04f1416a31bc57c2607ac8d253e259e1d4222132105d",
+    "release": "data/reported/seed_decomposition.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/stage3_slow_modes.json",
+    "source_sha256": "c69ae2c5a5ea6cff04f42174dfcbcb1c0b1ef120639f1202dc1c80de5be315a3",
+    "release": "data/reported/slow_modes.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/stage3_normalization_identities.json",
+    "source_sha256": "4161594703f622a375a3ef27a7679b98208b764833b1980df1969b719e1f4601",
+    "release": "data/reported/normalization_identities.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/stage3_continuation_core_audit.json",
+    "source_sha256": "21ee4b2b7d44d19d32a46d6e63bfc1166b48cb7345a4e037b497b6026964c6b4",
+    "release": "data/reported/continuation_core_audit.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/stage4_reference_adequacy.json",
+    "source_sha256": "25a34836b5a50176ef83bebdc50c4ff2600bcc3c904c78b8a4eeb74b30ddbbba",
+    "release": "data/reported/reference_adequacy.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/efficiency_aggregate_v1/results.json",
+    "source_sha256": "86b9495faa546e3077eea22056f032ff55b70ff064c8990e96356f6d9d1430db",
+    "release": "data/efficiency/gb3d.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/efficiency_rotation_v1/results.json",
+    "source_sha256": "74bec1eac12302abe9b7c539208ba28b9049c0b083d4021a134baf688c4166bf",
+    "release": "data/efficiency/gb3d_rotations.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/protocol.json",
+    "source_sha256": "255117c36660c88a6380d4badbabec539670a1763a115b55e782ad184d67c39d",
+    "release": "configs/gb3d_completion.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/stage4_reference_protocol.json",
+    "source_sha256": "2fe1275b123011ce743f0658cb483eb22d9bc645ccaf99795c9c63b477e49006",
+    "release": "configs/gb3d_reference.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/efficiency_v1/protocol.json",
+    "source_sha256": "084c005eeb7be0f239571ce91e473f3c9632711b55d250b291b2490bad2f2c1c",
+    "release": "configs/gb3d_efficiency.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/efficiency_rotation_v1/protocol.json",
+    "source_sha256": "f9af70d5864a781149100bc57fcaaa43d3ff5243dd66d4334bfaa638fe0e1f0c",
+    "release": "configs/gb3d_rotations.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/efs_unified_theory_v1/checks.json",
+    "source_sha256": "1a8e5c1bd161ee83b85d463afa7d290a0bcdcc72986a805800cc20f8a7c4108c",
+    "release": "data/reported/efs_unified_theory_v1.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/efs_unified_theory_v2/checks.json",
+    "source_sha256": "8b54f094a1f0ddfa397df23fd1965f8a4c8f3d4f683d22c32d5549501eefb12c",
+    "release": "data/reported/efs_unified_theory_v2.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/efs_dimensional_reduction_v1/checks.json",
+    "source_sha256": "974bcf1f5751da3debc512d90ed2b4bc656d582c599a57d4e4631d0dcce73793",
+    "release": "data/reported/efs_dimensional_reduction_v1.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/N2048_rho030_T200_seed310053/snapshots.npy",
+    "source_frame_index": 0,
+    "selected_frame_sha256": "75edb9c47e811221f8035ad673c9b20158e906b1c6ab9da08106af736e544d05",
+    "release": "data/examples/dimer2d.npz",
+    "transformation": "One original frame and independently archived per-frame estimates. Planar expected values stored originally in float32; 3D expected values restricted to evaluation mask."
+  },
+  {
+    "source": "Analysis/sample_efficiency_v1/test1/angular.npy",
+    "source_sha256": "66bc76d7caa793fb321bffa0a07249cbec22de468105c81629506293834e9d22",
+    "release": "data/examples/dimer2d.npz",
+    "transformation": "Selected first cached per-frame estimate; this is a test fixture, not a production trajectory."
+  },
+  {
+    "source": "Simulations/GB_N2048_rho012_T200_seed410082/snapshots.npy",
+    "source_frame_index": 0,
+    "selected_frame_sha256": "91e50773f4c7fa1339794682eb07533d7b1bbac076c18822a42d9f01ed9a50b9",
+    "release": "data/examples/gb2d.npz",
+    "transformation": "One original frame and independently archived per-frame estimates. Planar expected values stored originally in float32; 3D expected values restricted to evaluation mask."
+  },
+  {
+    "source": "Analysis/gb_multiseed_v1/test1/angular.npy",
+    "source_sha256": "0409f9786c02666ee8174c75fa636bc86bf2c89e06e871e8deaa32e264228f2f",
+    "release": "data/examples/gb2d.npz",
+    "transformation": "Selected first cached per-frame estimate; this is a test fixture, not a production trajectory."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_rho005_T200_seed410133/snapshots.npy",
+    "source_frame_index": 0,
+    "selected_frame_sha256": "eb7f186825a9cc18b225d27579a02fae047533b826c3741d839ef2f3b1e37e7f",
+    "release": "data/examples/gb3d.npz",
+    "transformation": "One original frame and independently archived per-frame estimates. Planar expected values stored originally in float32; 3D expected values restricted to evaluation mask."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/efficiency_v1/frames_0000.npy",
+    "source_sha256": "829e379a3ed0d8124de8475e9cbb4bdc28a27007a6b8199780eec1296e7abba1",
+    "release": "data/examples/gb3d.npz",
+    "transformation": "Selected first cached per-frame estimate; this is a test fixture, not a production trajectory."
+  },
+  {
+    "source": "Simulations/N2048_rho030_T200_seed310053/parameters.json",
+    "source_sha256": "eca3c81a9231d3dff7141c5ace0b8b2ac719f44e12436ca837489c90516246ad",
+    "release": "configs/runs/dimer2d_310053.json",
+    "transformation": "Runtime identifiers/output path removed; original sampler parameters retained."
+  },
+  {
+    "source": "Simulations/N2048_rho030_T200_seed410061/parameters.json",
+    "source_sha256": "b790c96dd9badfd3c670afe291a2e13364206cc1b91f7d1ea4aeb5b930b06e60",
+    "release": "configs/runs/dimer2d_410061.json",
+    "transformation": "Runtime identifiers/output path removed; original sampler parameters retained."
+  },
+  {
+    "source": "Simulations/N2048_rho030_T200_seed410062/parameters.json",
+    "source_sha256": "95b9460d00acf63ee57f9e2c0d9381b72a89ede1c9608c4244a67737a42c5daf",
+    "release": "configs/runs/dimer2d_410062.json",
+    "transformation": "Runtime identifiers/output path removed; original sampler parameters retained."
+  },
+  {
+    "source": "Simulations/N2048_rho030_T200_seed410063/parameters.json",
+    "source_sha256": "6ace01b8a8400e7237594d47ea04728c51b5beca30227b028389b7936e2abec1",
+    "release": "configs/runs/dimer2d_410063.json",
+    "transformation": "Runtime identifiers/output path removed; original sampler parameters retained."
+  },
+  {
+    "source": "Simulations/GB_N2048_rho012_T200_seed410082/parameters.json",
+    "source_sha256": "3d9d703a948cbcc2367afde41e15ffa06c6fa371ddd0e5a009729ee53aa6214f",
+    "release": "configs/runs/gb2d_410082.json",
+    "transformation": "Runtime identifiers/output path removed; original sampler parameters retained."
+  },
+  {
+    "source": "Simulations/GB_N2048_rho012_T200_seed410091/parameters.json",
+    "source_sha256": "29d446fd305aed88f691cbb9dafdb33aff3847eba8f84cd0b5797783b13c99a8",
+    "release": "configs/runs/gb2d_410091.json",
+    "transformation": "Runtime identifiers/output path removed; original sampler parameters retained."
+  },
+  {
+    "source": "Simulations/GB_N2048_rho012_T200_seed410092/parameters.json",
+    "source_sha256": "af033027f8d1dfce9211b218a9d682fff2fcbbd78dd50be6c50590880220348e",
+    "release": "configs/runs/gb2d_410092.json",
+    "transformation": "Runtime identifiers/output path removed; original sampler parameters retained."
+  },
+  {
+    "source": "Simulations/GB_N2048_rho012_T200_seed410093/parameters.json",
+    "source_sha256": "7916da9716cc7516a4c18e83e19b7280a8684899d489473fd328f7ef5a21ec04",
+    "release": "configs/runs/gb2d_410093.json",
+    "transformation": "Runtime identifiers/output path removed; original sampler parameters retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_rho005_T200_seed410131/parameters.json",
+    "source_sha256": "bc74231dd05a6069961ae1b769b7cb1f70ee095c1c51ddf25f5820583d199139",
+    "release": "configs/runs/gb3d_410131.json",
+    "transformation": "Runtime identifiers/output path removed; original sampler parameters retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_rho005_T200_seed410132/parameters.json",
+    "source_sha256": "9c195b13861cd0cedfe8119660afe77b4dd764b0e7dc610b52488526a3d433ae",
+    "release": "configs/runs/gb3d_410132.json",
+    "transformation": "Runtime identifiers/output path removed; original sampler parameters retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_rho005_T200_seed410133/parameters.json",
+    "source_sha256": "23489ca043acb722b80141094b05488d15546a5b6027d392ad846b848eb527f7",
+    "release": "configs/runs/gb3d_410133.json",
+    "transformation": "Runtime identifiers/output path removed; original sampler parameters retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_JCP80k_seed410131_segment1/parameters.json",
+    "source_sha256": "aa5b6cc6f451961667e238d18da61d83757e061401e368e58d789db1c66173b6",
+    "release": "configs/runs/gb3d_410131_segment1.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_JCP80k_seed410131_segment2/parameters.json",
+    "source_sha256": "dbe9b28d3cfa5c67c5a760b6d90e133eb10a022aa9a80f87932fb81430bd4861",
+    "release": "configs/runs/gb3d_410131_segment2.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_JCP80k_seed410131_segment3/parameters.json",
+    "source_sha256": "452a5bfffae6293024e186e54f0c6e36a0255b1e592f9fc98529b8366c42c084",
+    "release": "configs/runs/gb3d_410131_segment3.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_JCP80k_seed410131_segment4/parameters.json",
+    "source_sha256": "f920e6edd6943d01572696d47ca288f285c5aab0a35dd0533af0998f54406bac",
+    "release": "configs/runs/gb3d_410131_segment4.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_JCP80k_seed410131_segment5/parameters.json",
+    "source_sha256": "525e2b64e5cf6f2faeebf5758d3c8666cce761d9908cf0a7cf094b4f76a7585b",
+    "release": "configs/runs/gb3d_410131_segment5.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_JCP80k_seed410131_segment6/parameters.json",
+    "source_sha256": "367c0b959649dcb99330b4695d62722c75eab7528cef0ada039ebb48435710ee",
+    "release": "configs/runs/gb3d_410131_segment6.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_JCP80k_seed410132_segment1/parameters.json",
+    "source_sha256": "7b63b22883a6c856f6d29f479a68b815d12fcc99b0970a711aa5dfa87ae92e2f",
+    "release": "configs/runs/gb3d_410132_segment1.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_JCP80k_seed410132_segment2/parameters.json",
+    "source_sha256": "b069d5695c619e56794d30e390ff4d4517e5df81de22edba720ba4e83217d2a2",
+    "release": "configs/runs/gb3d_410132_segment2.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_JCP80k_seed410132_segment3/parameters.json",
+    "source_sha256": "3abce6feb2df8a6119e0ea8553efc24f2e7392190f5d36c712c4819b4d72507a",
+    "release": "configs/runs/gb3d_410132_segment3.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_JCP80k_seed410132_segment4/parameters.json",
+    "source_sha256": "5d38a132d1eef5d6b2c63f2852ac85ff0d2d9627f0bb820504aa9b18c6e80b48",
+    "release": "configs/runs/gb3d_410132_segment4.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_JCP80k_seed410132_segment5/parameters.json",
+    "source_sha256": "126102e68c091c72b00f9b32f13217bdd35ee0ca4e746e18b4d1f0d276d36e30",
+    "release": "configs/runs/gb3d_410132_segment5.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_JCP80k_seed410132_segment6/parameters.json",
+    "source_sha256": "461a24eb6d4f1698c3c6cc0f2b1ac571245ae89dfdafaca094dcf8ee7d818132",
+    "release": "configs/runs/gb3d_410132_segment6.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_JCP80k_seed410133_segment1/parameters.json",
+    "source_sha256": "4cb1d10e25be0b62e97b064bcb165137188b76dea51238d155c1f71454f52b87",
+    "release": "configs/runs/gb3d_410133_segment1.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_JCP80k_seed410133_segment2/parameters.json",
+    "source_sha256": "b846b3a35095318237f2a1f92aca9abe55414f7e251904dadd28bbac469d786d",
+    "release": "configs/runs/gb3d_410133_segment2.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_JCP80k_seed410133_segment3/parameters.json",
+    "source_sha256": "8d1cfd223b9e1095db9c7bb08ef1ad4c0f09c6cd02a630b85a7c2ea0c93f36d2",
+    "release": "configs/runs/gb3d_410133_segment3.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_JCP80k_seed410133_segment4/parameters.json",
+    "source_sha256": "06481137c98b7312999be87e68d7cac8ffc0ed3850c3a2464b8dadd45955beb4",
+    "release": "configs/runs/gb3d_410133_segment4.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_JCP80k_seed410133_segment5/parameters.json",
+    "source_sha256": "bda84191f6d4f1e0cf7f50e3a50cdf7fd5a5b4ece831565e787c95777b54d54f",
+    "release": "configs/runs/gb3d_410133_segment5.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_JCP80k_seed410133_segment6/parameters.json",
+    "source_sha256": "fd174fbf0715f4358efae9e90297c21b5f71792517cb28d0657836d8c9d7b1aa",
+    "release": "configs/runs/gb3d_410133_segment6.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_rho005_T200_seed410131_extension/parameters.json",
+    "source_sha256": "4c4935ae30adc552d4aedeb561605e95bfda69f5a3cb4e183289f1e0ba674b9e",
+    "release": "configs/runs/gb3d_410131_original_extension.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Simulations/GB3D_N1024_rho005_T200_seed410132_extension/parameters.json",
+    "source_sha256": "8786f1c267de6d485442af1ae55e285acefd8449bdd2682d4e5b46e40900a250",
+    "release": "configs/runs/gb3d_410132_original_extension.json",
+    "transformation": "Removed machine/runtime fields and normalized any local paths. Scientific values retained."
+  },
+  {
+    "source": "Analysis/gb3d_n1024_multiseed_v1/seed410131_20000/estimators.npz",
+    "source_sha256": "7b2c731fc72d3dd00ebb828edbc66b27336a0208ce0d2977453de0e7fdb12b62",
+    "release": "data/blocks/gb3d_reference500.npz",
+    "transformation": "EDH channels 0:129 on 0.9 <= r <= 5.5, ordered original/continuation segments, grouped to 500-frame blocks. Seeds 410131 and 410132 only."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410131/segment1/estimators.npz",
+    "source_sha256": "3554815ebec565107b3d6c1a15d62b848b8a24de463525ee603f83c2f6fec1df",
+    "release": "data/blocks/gb3d_reference500.npz",
+    "transformation": "EDH channels 0:129 on 0.9 <= r <= 5.5, ordered original/continuation segments, grouped to 500-frame blocks. Seeds 410131 and 410132 only."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410131/segment2/estimators.npz",
+    "source_sha256": "5fd638f6951640da10fdb83f1c81062e8d1ed1aeb05c30a82f4206527bc0ce63",
+    "release": "data/blocks/gb3d_reference500.npz",
+    "transformation": "EDH channels 0:129 on 0.9 <= r <= 5.5, ordered original/continuation segments, grouped to 500-frame blocks. Seeds 410131 and 410132 only."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410131/segment3/estimators.npz",
+    "source_sha256": "fa924eddc6fd718b5e50e8d23d15ab5c0946f5d206cf0469c27b6816fb86e28b",
+    "release": "data/blocks/gb3d_reference500.npz",
+    "transformation": "EDH channels 0:129 on 0.9 <= r <= 5.5, ordered original/continuation segments, grouped to 500-frame blocks. Seeds 410131 and 410132 only."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410131/segment4/estimators.npz",
+    "source_sha256": "36f8417958fe2fc7fc5c704bada6c6cd4b02125215100fabc4a2ebb71f2eecf0",
+    "release": "data/blocks/gb3d_reference500.npz",
+    "transformation": "EDH channels 0:129 on 0.9 <= r <= 5.5, ordered original/continuation segments, grouped to 500-frame blocks. Seeds 410131 and 410132 only."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410131/segment5/estimators.npz",
+    "source_sha256": "8d81232327000cfc006cd444cebec2c4d1999be3a5820bb4c7d5e5bf8984a48a",
+    "release": "data/blocks/gb3d_reference500.npz",
+    "transformation": "EDH channels 0:129 on 0.9 <= r <= 5.5, ordered original/continuation segments, grouped to 500-frame blocks. Seeds 410131 and 410132 only."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410131/segment6/estimators.npz",
+    "source_sha256": "1f6efc2601eedb8461f42b73c9defe42d4cc945e352eac91cde0159027085fd2",
+    "release": "data/blocks/gb3d_reference500.npz",
+    "transformation": "EDH channels 0:129 on 0.9 <= r <= 5.5, ordered original/continuation segments, grouped to 500-frame blocks. Seeds 410131 and 410132 only."
+  },
+  {
+    "source": "Analysis/gb3d_n1024_multiseed_v1/seed410132_20000/estimators.npz",
+    "source_sha256": "d98f20bc5a82d171cf74a0f95c6ca0f4c7d2877f95fb20c1db3db2eb63e62f7f",
+    "release": "data/blocks/gb3d_reference500.npz",
+    "transformation": "EDH channels 0:129 on 0.9 <= r <= 5.5, ordered original/continuation segments, grouped to 500-frame blocks. Seeds 410131 and 410132 only."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410132/segment1/estimators.npz",
+    "source_sha256": "243d29c6123447eda767a4b95dc92ef1c7c5c945cb9af81e8af6d7e169a362de",
+    "release": "data/blocks/gb3d_reference500.npz",
+    "transformation": "EDH channels 0:129 on 0.9 <= r <= 5.5, ordered original/continuation segments, grouped to 500-frame blocks. Seeds 410131 and 410132 only."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410132/segment2/estimators.npz",
+    "source_sha256": "5817fbc1e431f9a415d7b4e871b9d7784917a7f148bc8e8142072de423a2636b",
+    "release": "data/blocks/gb3d_reference500.npz",
+    "transformation": "EDH channels 0:129 on 0.9 <= r <= 5.5, ordered original/continuation segments, grouped to 500-frame blocks. Seeds 410131 and 410132 only."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410132/segment3/estimators.npz",
+    "source_sha256": "4cec0c8c919545956f0206fcdbb7143897d740d7a32c7a9cdb3d9d58763f4e29",
+    "release": "data/blocks/gb3d_reference500.npz",
+    "transformation": "EDH channels 0:129 on 0.9 <= r <= 5.5, ordered original/continuation segments, grouped to 500-frame blocks. Seeds 410131 and 410132 only."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410132/segment4/estimators.npz",
+    "source_sha256": "5c353b6ded68769bea3048cd217ba76fd93ab59a9a0eaedd1373d0e403169a68",
+    "release": "data/blocks/gb3d_reference500.npz",
+    "transformation": "EDH channels 0:129 on 0.9 <= r <= 5.5, ordered original/continuation segments, grouped to 500-frame blocks. Seeds 410131 and 410132 only."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410132/segment5/estimators.npz",
+    "source_sha256": "18375e090ad2ad0b4b1bc74f5c8dcc7acfd0b0a65fafbbf457af238caf4c4157",
+    "release": "data/blocks/gb3d_reference500.npz",
+    "transformation": "EDH channels 0:129 on 0.9 <= r <= 5.5, ordered original/continuation segments, grouped to 500-frame blocks. Seeds 410131 and 410132 only."
+  },
+  {
+    "source": "Analysis/gb3d_jcp_completion_v1/seed410132/segment6/estimators.npz",
+    "source_sha256": "5b377a33bd0c1fdf6094b7add38979ce86539f33f49ef963d263668c30cee33f",
+    "release": "data/blocks/gb3d_reference500.npz",
+    "transformation": "EDH channels 0:129 on 0.9 <= r <= 5.5, ordered original/continuation segments, grouped to 500-frame blocks. Seeds 410131 and 410132 only."
+  }
+]

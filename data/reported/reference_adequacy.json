@@ -1,0 +1,81 @@
+{
+  "protocol_sha256": "2fe1275b123011ce743f0658cb483eb22d9bc645ccaf99795c9c63b477e49006",
+  "channels": {
+    "radial": {
+      "500": {
+        "reference_RMS_SE": 0.00017415542408059418,
+        "reference_error_norm95": 0.00019790158011906585,
+        "target_over3": 0.0016666666666666668,
+        "precision_pass": true,
+        "seed_difference_NRMSE": 0.0003936945716702314,
+        "compatibility_norm_p": 0.053973013493253376,
+        "blocks_per_seed": 160
+      },
+      "1000": {
+        "reference_RMS_SE": 0.00017491419537159135,
+        "reference_error_norm95": 0.00020293557412160988,
+        "target_over3": 0.0016666666666666668,
+        "precision_pass": true,
+        "seed_difference_NRMSE": 0.0003936945716702314,
+        "compatibility_norm_p": 0.09495252373813093,
+        "blocks_per_seed": 80
+      },
+      "2000": {
+        "reference_RMS_SE": 0.00017539380814262764,
+        "reference_error_norm95": 0.00020969432567415324,
+        "target_over3": 0.0016666666666666668,
+        "precision_pass": true,
+        "seed_difference_NRMSE": 0.0003936945716702314,
+        "compatibility_norm_p": 0.13093453273363317,
+        "blocks_per_seed": 40
+      },
+      "4000": {
+        "reference_RMS_SE": 0.00017375505493671332,
+        "reference_error_norm95": 0.00021382129689144044,
+        "target_over3": 0.0016666666666666668,
+        "precision_pass": true,
+        "seed_difference_NRMSE": 0.0003936945716702314,
+        "compatibility_norm_p": 0.15642178910544727,
+        "blocks_per_seed": 20
+      }
+    },
+    "angular": {
+      "500": {
+        "reference_RMS_SE": 0.0015559841611603247,
+        "reference_error_norm95": 0.0016580554001566134,
+        "target_over3": 0.006666666666666667,
+        "precision_pass": true,
+        "seed_difference_NRMSE": 0.0031152083558586524,
+        "compatibility_norm_p": 0.47976011994003,
+        "blocks_per_seed": 160
+      },
+      "1000": {
+        "reference_RMS_SE": 0.0015565899067690576,
+        "reference_error_norm95": 0.0017094807170273888,
+        "target_over3": 0.006666666666666667,
+        "precision_pass": true,
+        "seed_difference_NRMSE": 0.0031152083558586524,
+        "compatibility_norm_p": 0.4732633683158421,
+        "blocks_per_seed": 80
+      },
+      "2000": {
+        "reference_RMS_SE": 0.001557413850193378,
+        "reference_error_norm95": 0.001764141769844729,
+        "target_over3": 0.006666666666666667,
+        "precision_pass": true,
+        "seed_difference_NRMSE": 0.0031152083558586524,
+        "compatibility_norm_p": 0.4767616191904048,
+        "blocks_per_seed": 40
+      },
+      "4000": {
+        "reference_RMS_SE": 0.0015587800989904903,
+        "reference_error_norm95": 0.0018489536764026496,
+        "target_over3": 0.006666666666666667,
+        "precision_pass": true,
+        "seed_difference_NRMSE": 0.0031152083558586524,
+        "compatibility_norm_p": 0.4732633683158421,
+        "blocks_per_seed": 20
+      }
+    }
+  }
+}

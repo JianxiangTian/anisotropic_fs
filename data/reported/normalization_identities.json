@@ -1,0 +1,110 @@
+{
+  "scope": "Algebraic identities on all 2400 saved 100-frame blocks; not an independent force or equilibrium test",
+  "outputs": [
+    {
+      "file": "Analysis\\gb3d_n1024_multiseed_v1\\seed410131_20000\\estimators.npz",
+      "angular_marginal_max_error": 2.4424906541753444e-15,
+      "domain_anchor_max_error": 5.689893001203927e-16
+    },
+    {
+      "file": "Analysis\\gb3d_jcp_completion_v1\\seed410131\\segment1\\estimators.npz",
+      "angular_marginal_max_error": 2.220446049250313e-15,
+      "domain_anchor_max_error": 5.449200118912145e-16
+    },
+    {
+      "file": "Analysis\\gb3d_jcp_completion_v1\\seed410131\\segment2\\estimators.npz",
+      "angular_marginal_max_error": 1.9984014443252818e-15,
+      "domain_anchor_max_error": 6.499792024050599e-16
+    },
+    {
+      "file": "Analysis\\gb3d_jcp_completion_v1\\seed410131\\segment3\\estimators.npz",
+      "angular_marginal_max_error": 2.220446049250313e-15,
+      "domain_anchor_max_error": 5.316927453868914e-16
+    },
+    {
+      "file": "Analysis\\gb3d_jcp_completion_v1\\seed410131\\segment4\\estimators.npz",
+      "angular_marginal_max_error": 2.220446049250313e-15,
+      "domain_anchor_max_error": 5.692061405548898e-16
+    },
+    {
+      "file": "Analysis\\gb3d_jcp_completion_v1\\seed410131\\segment5\\estimators.npz",
+      "angular_marginal_max_error": 2.1094237467877974e-15,
+      "domain_anchor_max_error": 5.346200912526022e-16
+    },
+    {
+      "file": "Analysis\\gb3d_jcp_completion_v1\\seed410131\\segment6\\estimators.npz",
+      "angular_marginal_max_error": 2.220446049250313e-15,
+      "domain_anchor_max_error": 6.500876226223085e-16
+    },
+    {
+      "file": "Analysis\\gb3d_n1024_multiseed_v1\\seed410132_20000\\estimators.npz",
+      "angular_marginal_max_error": 2.220446049250313e-15,
+      "domain_anchor_max_error": 5.726755875068434e-16
+    },
+    {
+      "file": "Analysis\\gb3d_jcp_completion_v1\\seed410132\\segment1\\estimators.npz",
+      "angular_marginal_max_error": 2.1094237467877974e-15,
+      "domain_anchor_max_error": 5.248690479638107e-16
+    },
+    {
+      "file": "Analysis\\gb3d_jcp_completion_v1\\seed410132\\segment2\\estimators.npz",
+      "angular_marginal_max_error": 2.220446049250313e-15,
+      "domain_anchor_max_error": 7.391548310919926e-16
+    },
+    {
+      "file": "Analysis\\gb3d_jcp_completion_v1\\seed410132\\segment3\\estimators.npz",
+      "angular_marginal_max_error": 2.4424906541753444e-15,
+      "domain_anchor_max_error": 5.629177679544739e-16
+    },
+    {
+      "file": "Analysis\\gb3d_jcp_completion_v1\\seed410132\\segment4\\estimators.npz",
+      "angular_marginal_max_error": 1.9984014443252818e-15,
+      "domain_anchor_max_error": 6.388119200284592e-16
+    },
+    {
+      "file": "Analysis\\gb3d_jcp_completion_v1\\seed410132\\segment5\\estimators.npz",
+      "angular_marginal_max_error": 2.1094237467877974e-15,
+      "domain_anchor_max_error": 5.92082806394334e-16
+    },
+    {
+      "file": "Analysis\\gb3d_jcp_completion_v1\\seed410132\\segment6\\estimators.npz",
+      "angular_marginal_max_error": 2.220446049250313e-15,
+      "domain_anchor_max_error": 6.182120787512346e-16
+    },
+    {
+      "file": "Analysis\\gb3d_n1024_multiseed_v1\\seed410133_20000\\estimators.npz",
+      "angular_marginal_max_error": 2.4424906541753444e-15,
+      "domain_anchor_max_error": 5.939259500875593e-16
+    },
+    {
+      "file": "Analysis\\gb3d_jcp_completion_v1\\seed410133\\segment1\\estimators.npz",
+      "angular_marginal_max_error": 1.9984014443252818e-15,
+      "domain_anchor_max_error": 5.425347671117464e-16
+    },
+    {
+      "file": "Analysis\\gb3d_jcp_completion_v1\\seed410133\\segment2\\estimators.npz",
+      "angular_marginal_max_error": 1.9984014443252818e-15,
+      "domain_anchor_max_error": 5.960943544325303e-16
+    },
+    {
+      "file": "Analysis\\gb3d_jcp_completion_v1\\seed410133\\segment3\\estimators.npz",
+      "angular_marginal_max_error": 1.9984014443252818e-15,
+      "domain_anchor_max_error": 5.448929068369024e-16
+    },
+    {
+      "file": "Analysis\\gb3d_jcp_completion_v1\\seed410133\\segment4\\estimators.npz",
+      "angular_marginal_max_error": 1.9984014443252818e-15,
+      "domain_anchor_max_error": 6.674348573820765e-16
+    },
+    {
+      "file": "Analysis\\gb3d_jcp_completion_v1\\seed410133\\segment5\\estimators.npz",
+      "angular_marginal_max_error": 2.220446049250313e-15,
+      "domain_anchor_max_error": 5.91107024439097e-16
+    },
+    {
+      "file": "Analysis\\gb3d_jcp_completion_v1\\seed410133\\segment6\\estimators.npz",
+      "angular_marginal_max_error": 2.220446049250313e-15,
+      "domain_anchor_max_error": 5.30825383648903e-16
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "dimensions": {
+    "3": {
+      "16": {
+        "measure_error": 1.609823385706477e-15,
+        "weak_residual": -1.2323475573339238e-14
+      },
+      "28": {
+        "measure_error": 4.440892098500626e-16,
+        "weak_residual": 5.051514762044462e-15
+      }
+    },
+    "4": {
+      "16": {
+        "measure_error": 1.0547118733938987e-15,
+        "weak_residual": -1.1546319456101628e-14
+      },
+      "28": {
+        "measure_error": 3.885780586188048e-16,
+        "weak_residual": 4.718447854656915e-15
+      }
+    },
+    "5": {
+      "16": {
+        "measure_error": 2.220446049250313e-16,
+        "weak_residual": 0.0
+      },
+      "28": {
+        "measure_error": 4.440892098500626e-16,
+        "weak_residual": 0.0
+      }
+    },
+    "8": {
+      "16": {
+        "measure_error": 6.661338147750939e-16,
+        "weak_residual": 1.7486012637846216e-15
+      },
+      "28": {
+        "measure_error": 4.440892098500626e-16,
+        "weak_residual": 3.885780586188048e-16
+      }
+    }
+  },
+  "max_measure_error": 1.609823385706477e-15,
+  "max_weak_residual": 1.2323475573339238e-14,
+  "max_divergence_drift_error": 2.4147350785597155e-14,
+  "signed_3d_measure_error": 2.220446049250313e-16,
+  "geodesic_max_scaled_by_h": {
+    "0.004": 7.098980396685242e-06,
+    "0.002": 1.774739619170405e-06,
+    "0.001": 4.438004971161908e-07
+  },
+  "geodesic_smallest_h_scaled_error": 4.438004971161908e-07,
+  "scope": "Analytic quotient coordinates, independent quadrature and full-sphere finite differences only. No MC data or estimator definitions changed."
+}

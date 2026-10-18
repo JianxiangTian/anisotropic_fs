@@ -1,0 +1,23 @@
+{
+  "model": "dimer2d",
+  "parameters": {
+    "N": 2048,
+    "rho": 0.3,
+    "T": 2.0,
+    "ell": 0.5,
+    "equil": 20000,
+    "frames": 20000,
+    "stride": 10,
+    "seed": 410061,
+    "step": 0.25,
+    "turn": 0.7,
+    "L": 82.62364471909156,
+    "site_switch_on": 2.0,
+    "site_cutoff": 2.5,
+    "pair_site_prefactor": 0.25,
+    "units": "sigma=epsilon=kB=1",
+    "version": "v1"
+  },
+  "source": "Simulations/N2048_rho030_T200_seed410061/parameters.json",
+  "role": "reference"
+}

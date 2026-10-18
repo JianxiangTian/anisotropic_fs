@@ -1,0 +1,32 @@
+{
+  "N": 1024,
+  "rho": 0.05,
+  "T": 2.0,
+  "equil": 0,
+  "frames": 10000,
+  "stride": 10,
+  "seed": 410132,
+  "step": 0.4,
+  "turn": 1.0,
+  "out": "Simulations/GB3D_N1024_JCP80k_seed410132_segment2",
+  "L": 27.359615146827146,
+  "kappa": 3,
+  "kprime": 5,
+  "mu": 2,
+  "nu": 1,
+  "center_switch_on": 4.5,
+  "center_cutoff": 6,
+  "model": "3D_uniaxial_GB",
+  "physical_branch": "r-sigma+1>0",
+  "units": "sigma0=epsilon0=kB=1",
+  "orientation": "unit vector on S2, apolar double cover",
+  "segments": [
+    "Simulations/GB3D_N1024_rho005_T200_seed410132",
+    "Simulations/GB3D_N1024_rho005_T200_seed410132_extension"
+  ],
+  "continuation_of": "Simulations/GB3D_N1024_JCP80k_seed410132_segment1",
+  "continuation_rng_seed": 612132,
+  "physical_seed": 410132,
+  "continuation_note": "Same physical Markov chain; new RNG stream, not a new independent seed",
+  "first_global_index": 30000
+}

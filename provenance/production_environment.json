@@ -1,0 +1,16 @@
+{
+  "sha256": {
+    "dimer_mc.py": "6232db2e24f9be06dede720728f98bd68382207f331abd08a79b42101be11170",
+    "joint_estimators.py": "7a53a4a9ada7ce17e7a784401fc6db73dd8b5b12c497871d029fa72844219f66",
+    "summarize_run.py": "9af87207e0747b7ed494ef46515276fd9e23bee0527e71e8937a3419bd1b3057",
+    "check_statistics.py": "b3241c98036b3c86f2fd3b4308d3c532e3c64ee975dd226332cdb2e9df467aec"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.5.3",
+    "numba": "0.68.0",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "reproducibility": "Full rerun from saved seed; coordinate checkpoint does not include compiled RNG state."
+}

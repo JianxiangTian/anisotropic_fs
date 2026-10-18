@@ -1,0 +1,1407 @@
+{
+  "state": {
+    "N": 2048,
+    "rho": 0.12,
+    "T": 2
+  },
+  "M": [
+    3000,
+    5000,
+    7500,
+    10000
+  ],
+  "repeats": 100,
+  "resampling_seed": 410094,
+  "reference_frames": 40000,
+  "reference_seeds": [
+    410091,
+    410092
+  ],
+  "test_seeds": [
+    410082,
+    410093
+  ],
+  "radial_domain": [
+    0.9,
+    5.5
+  ],
+  "radial_width": 0.025,
+  "angular_bins": [
+    12,
+    12
+  ],
+  "annulus_anchor": [
+    0.55,
+    6.0
+  ],
+  "reference_check": {
+    "radial": {
+      "relative_rms_SE": 0.000618848415618792,
+      "bootstrap_error_q95": 0.000680793957016926,
+      "between_reference_run_nrmse": 0.0011913008257946262,
+      "bootstrap1000_error_q95": 0.0007239027076647898
+    },
+    "joint": {
+      "relative_rms_SE": 0.005263942146245517,
+      "bootstrap_error_q95": 0.006011336373249216,
+      "between_reference_run_nrmse": 0.010520429299898992,
+      "bootstrap1000_error_q95": 0.0061372557143160355
+    }
+  },
+  "summaries": [
+    {
+      "test": "test1",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "DH",
+      "M": 3000,
+      "error_p025": 0.0021586044790369596,
+      "error_median": 0.0023711647237952115,
+      "error_p975": 0.002624724407196255,
+      "error_q95": 0.002599757308331172,
+      "conditional_q95_CI95": [
+        0.002526869162226456,
+        0.0026296432088469433
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test1",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "DH",
+      "M": 5000,
+      "error_p025": 0.0017473409705193413,
+      "error_median": 0.00192704693551854,
+      "error_p975": 0.002092971366636974,
+      "error_q95": 0.0020633594521301058,
+      "conditional_q95_CI95": [
+        0.0020377330732628657,
+        0.0021143718768219855
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test1",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "DH",
+      "M": 7500,
+      "error_p025": 0.0015278585658938376,
+      "error_median": 0.0016565126479828173,
+      "error_p975": 0.0017909262007777677,
+      "error_q95": 0.0017606663084308108,
+      "conditional_q95_CI95": [
+        0.0017419426816653522,
+        0.0017965624028559713
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test1",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "DH",
+      "M": 10000,
+      "error_p025": 0.0014191059893430696,
+      "error_median": 0.0014955046944735379,
+      "error_p975": 0.0016002024356115033,
+      "error_q95": 0.0015826080053777344,
+      "conditional_q95_CI95": [
+        0.0015579447551588661,
+        0.0016078980974967684
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test1",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "FS",
+      "M": 3000,
+      "error_p025": 0.0011191967152836806,
+      "error_median": 0.0014207345553521825,
+      "error_p975": 0.001854549894577042,
+      "error_q95": 0.0018004531998021052,
+      "conditional_q95_CI95": [
+        0.001725360725862466,
+        0.0018724720138334396
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test1",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "FS",
+      "M": 5000,
+      "error_p025": 0.001058242064557071,
+      "error_median": 0.0012869287062778367,
+      "error_p975": 0.001552582769300747,
+      "error_q95": 0.0015175862664726283,
+      "conditional_q95_CI95": [
+        0.001457681754598654,
+        0.001567058102281732
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test1",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "FS",
+      "M": 7500,
+      "error_p025": 0.0010501176454300102,
+      "error_median": 0.001207750979994851,
+      "error_p975": 0.001426950812643926,
+      "error_q95": 0.001361531930671648,
+      "conditional_q95_CI95": [
+        0.001317703858436141,
+        0.0014326059135608016
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test1",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "FS",
+      "M": 10000,
+      "error_p025": 0.001081121399252539,
+      "error_median": 0.0011697611097071603,
+      "error_p975": 0.0012348616884487289,
+      "error_q95": 0.001224531830753808,
+      "conditional_q95_CI95": [
+        0.0012084675002634268,
+        0.0012352441827056264
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test1",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "DH",
+      "M": 3000,
+      "error_p025": 0.020212670778309738,
+      "error_median": 0.020505260945249765,
+      "error_p975": 0.020861014585120245,
+      "error_q95": 0.020792172373918234,
+      "conditional_q95_CI95": [
+        0.020694076622396834,
+        0.02088689036993038
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test1",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "DH",
+      "M": 5000,
+      "error_p025": 0.016344729868061417,
+      "error_median": 0.016591214765189072,
+      "error_p975": 0.016882058723741773,
+      "error_q95": 0.016831131492222144,
+      "conditional_q95_CI95": [
+        0.016778214877936196,
+        0.016889199307666674
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test1",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "DH",
+      "M": 7500,
+      "error_p025": 0.013974174325789564,
+      "error_median": 0.014257386356104459,
+      "error_p975": 0.014652665905397926,
+      "error_q95": 0.014610304677149936,
+      "conditional_q95_CI95": [
+        0.014457420810952226,
+        0.014671833330958407
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test1",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "DH",
+      "M": 10000,
+      "error_p025": 0.012634204204361378,
+      "error_median": 0.012941811243182671,
+      "error_p975": 0.013358747311260834,
+      "error_q95": 0.013225341859415998,
+      "conditional_q95_CI95": [
+        0.013115320065690331,
+        0.01338393294118516
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test1",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "FS",
+      "M": 3000,
+      "error_p025": 0.014036748921864056,
+      "error_median": 0.015049507597017106,
+      "error_p975": 0.01625338488235994,
+      "error_q95": 0.015993234586421955,
+      "conditional_q95_CI95": [
+        0.015633301723309647,
+        0.0162777881347302
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test1",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "FS",
+      "M": 5000,
+      "error_p025": 0.011990682777850828,
+      "error_median": 0.012630778471445375,
+      "error_p975": 0.013237046607735217,
+      "error_q95": 0.013123034040961244,
+      "conditional_q95_CI95": [
+        0.013039231400971116,
+        0.013260579896827376
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test1",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "FS",
+      "M": 7500,
+      "error_p025": 0.010853145285096464,
+      "error_median": 0.011265349532919872,
+      "error_p975": 0.011846926009985015,
+      "error_q95": 0.01166469908181557,
+      "conditional_q95_CI95": [
+        0.011522598613280985,
+        0.011924996829031255
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test1",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "FS",
+      "M": 10000,
+      "error_p025": 0.010184530978351045,
+      "error_median": 0.010522305313811486,
+      "error_p975": 0.011023560770121095,
+      "error_q95": 0.01092470194347989,
+      "conditional_q95_CI95": [
+        0.01071258484336161,
+        0.011062276075626648
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test1",
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "DH",
+      "M": 3000,
+      "error_p025": 0.0022831185901048,
+      "error_median": 0.00246947619806578,
+      "error_p975": 0.0026613191505566133,
+      "error_q95": 0.002649999931397822,
+      "conditional_q95_CI95": [
+        0.0026293964840254425,
+        0.002665705841249113
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test1",
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "DH",
+      "M": 5000,
+      "error_p025": 0.0019139778136301523,
+      "error_median": 0.0020155485978206713,
+      "error_p975": 0.0021641915018493483,
+      "error_q95": 0.002136471370007919,
+      "conditional_q95_CI95": [
+        0.0020924573489439512,
+        0.002166078581215103
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test1",
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "DH",
+      "M": 7500,
+      "error_p025": 0.001606564751948139,
+      "error_median": 0.0016912845323446145,
+      "error_p975": 0.0017917449377396377,
+      "error_q95": 0.001772779500395992,
+      "conditional_q95_CI95": [
+        0.00175438577198056,
+        0.0017981677523079683
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test1",
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "DH",
+      "M": 10000,
+      "error_p025": 0.0014191059893430696,
+      "error_median": 0.0014955046944735379,
+      "error_p975": 0.0016002024356115033,
+      "error_q95": 0.0015826080053777344,
+      "conditional_q95_CI95": [
+        0.0015581529704888886,
+        0.0016078980974967684
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test1",
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "FS",
+      "M": 3000,
+      "error_p025": 0.0010580528697152623,
+      "error_median": 0.0013446560396457017,
+      "error_p975": 0.001876072367346209,
+      "error_q95": 0.0017910632971161497,
+      "conditional_q95_CI95": [
+        0.0016642208708963356,
+        0.001880438807931345
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test1",
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "FS",
+      "M": 5000,
+      "error_p025": 0.0010759419662072075,
+      "error_median": 0.0011912703580493579,
+      "error_p975": 0.0014036231892331206,
+      "error_q95": 0.0013850463725667206,
+      "conditional_q95_CI95": [
+        0.001331794185821531,
+        0.0014060774404734432
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test1",
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "FS",
+      "M": 7500,
+      "error_p025": 0.0010956223750719187,
+      "error_median": 0.001184286199880571,
+      "error_p975": 0.001295516657321987,
+      "error_q95": 0.0012816776884734947,
+      "conditional_q95_CI95": [
+        0.001253027097246152,
+        0.0013054996891537962
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test1",
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "FS",
+      "M": 10000,
+      "error_p025": 0.001081121399252539,
+      "error_median": 0.0011697611097071603,
+      "error_p975": 0.0012348616884487289,
+      "error_q95": 0.001224531830753808,
+      "conditional_q95_CI95": [
+        0.0012084314099034509,
+        0.0012352441827056264
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test1",
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "DH",
+      "M": 3000,
+      "error_p025": 0.020458729522572796,
+      "error_median": 0.02066932891852122,
+      "error_p975": 0.02097065057296379,
+      "error_q95": 0.020919232670127356,
+      "conditional_q95_CI95": [
+        0.020862544325363455,
+        0.020973916958862037
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test1",
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "DH",
+      "M": 5000,
+      "error_p025": 0.016445028950532094,
+      "error_median": 0.016709822639296268,
+      "error_p975": 0.016996606205931408,
+      "error_q95": 0.016908665565046003,
+      "conditional_q95_CI95": [
+        0.01686138836156317,
+        0.017009103147597293
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test1",
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "DH",
+      "M": 7500,
+      "error_p025": 0.013991492519259616,
+      "error_median": 0.014275883169745963,
+      "error_p975": 0.014692704034019493,
+      "error_q95": 0.014585592659310401,
+      "conditional_q95_CI95": [
+        0.01444996744665281,
+        0.014727241945740353
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test1",
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "DH",
+      "M": 10000,
+      "error_p025": 0.012634204204361378,
+      "error_median": 0.012941811243182671,
+      "error_p975": 0.013358747311260834,
+      "error_q95": 0.013225341859415998,
+      "conditional_q95_CI95": [
+        0.0131182590171743,
+        0.01338393294118516
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test1",
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "FS",
+      "M": 3000,
+      "error_p025": 0.01488136011787125,
+      "error_median": 0.01548000594374474,
+      "error_p975": 0.0160239305188865,
+      "error_q95": 0.01598154619023287,
+      "conditional_q95_CI95": [
+        0.01591887231641021,
+        0.01604513768422133
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test1",
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "FS",
+      "M": 5000,
+      "error_p025": 0.012471568680119435,
+      "error_median": 0.012858906168772562,
+      "error_p975": 0.013283851267396589,
+      "error_q95": 0.013220831929901441,
+      "conditional_q95_CI95": [
+        0.013112136848470027,
+        0.013289944170145835
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test1",
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "FS",
+      "M": 7500,
+      "error_p025": 0.010752780168571337,
+      "error_median": 0.011181323057144293,
+      "error_p975": 0.011655213786467935,
+      "error_q95": 0.011567717701095399,
+      "conditional_q95_CI95": [
+        0.011457512976887465,
+        0.011663577104807015
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test1",
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "FS",
+      "M": 10000,
+      "error_p025": 0.010184530978351045,
+      "error_median": 0.010522305313811486,
+      "error_p975": 0.011023560770121095,
+      "error_q95": 0.01092470194347989,
+      "conditional_q95_CI95": [
+        0.01070953250104032,
+        0.011062276075626648
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test2",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "DH",
+      "M": 3000,
+      "error_p025": 0.002181081147137432,
+      "error_median": 0.0024296872779819806,
+      "error_p975": 0.0026092472141431384,
+      "error_q95": 0.002595549571751794,
+      "conditional_q95_CI95": [
+        0.0025525519820782092,
+        0.002612923031307372
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test2",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "DH",
+      "M": 5000,
+      "error_p025": 0.0018364218491741255,
+      "error_median": 0.002007021441552265,
+      "error_p975": 0.0021611008661287616,
+      "error_q95": 0.0021414605080843714,
+      "conditional_q95_CI95": [
+        0.002106242172439601,
+        0.0021755054505003327
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test2",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "DH",
+      "M": 7500,
+      "error_p025": 0.0016095113860879532,
+      "error_median": 0.0017345187070163142,
+      "error_p975": 0.0018765899569521106,
+      "error_q95": 0.0018538188372374048,
+      "conditional_q95_CI95": [
+        0.0018058943919701486,
+        0.0018847939610165609
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test2",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "DH",
+      "M": 10000,
+      "error_p025": 0.0015069381488141082,
+      "error_median": 0.0015838918007524427,
+      "error_p975": 0.001662474290885705,
+      "error_q95": 0.0016579727845328653,
+      "conditional_q95_CI95": [
+        0.0016357844819374539,
+        0.0016673517280132982
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test2",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "FS",
+      "M": 3000,
+      "error_p025": 0.001064150317460719,
+      "error_median": 0.0012777282903070294,
+      "error_p975": 0.0016882109138630051,
+      "error_q95": 0.001578717264934159,
+      "conditional_q95_CI95": [
+        0.0015308652961321175,
+        0.0017168340650427067
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test2",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "FS",
+      "M": 5000,
+      "error_p025": 0.0009621636334344449,
+      "error_median": 0.0011459444576568337,
+      "error_p975": 0.0014540905800612945,
+      "error_q95": 0.001317402754901817,
+      "conditional_q95_CI95": [
+        0.0012902263361510094,
+        0.001487058545426522
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test2",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "FS",
+      "M": 7500,
+      "error_p025": 0.0009435347338421444,
+      "error_median": 0.0010822776813696686,
+      "error_p975": 0.001227819121980802,
+      "error_q95": 0.0011865969811259505,
+      "conditional_q95_CI95": [
+        0.0011557972275127156,
+        0.001230995163559412
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test2",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "FS",
+      "M": 10000,
+      "error_p025": 0.0009347782899262405,
+      "error_median": 0.0010137568274163635,
+      "error_p975": 0.001097790074068906,
+      "error_q95": 0.0010898248146641342,
+      "conditional_q95_CI95": [
+        0.0010679219573687816,
+        0.0010984148805441908
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test2",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "DH",
+      "M": 3000,
+      "error_p025": 0.02016061635766544,
+      "error_median": 0.0204491882661679,
+      "error_p975": 0.020725366171141096,
+      "error_q95": 0.0206583301931664,
+      "conditional_q95_CI95": [
+        0.020609207024163547,
+        0.020729938741246325
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test2",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "DH",
+      "M": 5000,
+      "error_p025": 0.0163024929294651,
+      "error_median": 0.01653754430006453,
+      "error_p975": 0.01695466042871806,
+      "error_q95": 0.01678042990696849,
+      "conditional_q95_CI95": [
+        0.01673029464006797,
+        0.016979423554118408
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test2",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "DH",
+      "M": 7500,
+      "error_p025": 0.013963755156781619,
+      "error_median": 0.0142153502393268,
+      "error_p975": 0.014645791525899423,
+      "error_q95": 0.014537386357912713,
+      "conditional_q95_CI95": [
+        0.014382542982427976,
+        0.014684300790921274
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test2",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "DH",
+      "M": 10000,
+      "error_p025": 0.012612032294588776,
+      "error_median": 0.012886274498733398,
+      "error_p975": 0.01328681272732267,
+      "error_q95": 0.013266382782915581,
+      "conditional_q95_CI95": [
+        0.013064270814911485,
+        0.013302011773244363
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test2",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "FS",
+      "M": 3000,
+      "error_p025": 0.01392890662398072,
+      "error_median": 0.014852325621802123,
+      "error_p975": 0.016186104129396,
+      "error_q95": 0.01581443030118475,
+      "conditional_q95_CI95": [
+        0.015469968118677584,
+        0.01619654916397246
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test2",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "FS",
+      "M": 5000,
+      "error_p025": 0.01174510476223512,
+      "error_median": 0.012523029685386995,
+      "error_p975": 0.0131437428531771,
+      "error_q95": 0.013128732041306667,
+      "conditional_q95_CI95": [
+        0.012933865247860754,
+        0.013148935609235666
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test2",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "FS",
+      "M": 7500,
+      "error_p025": 0.01067817146421045,
+      "error_median": 0.011116677772606696,
+      "error_p975": 0.011605573210235238,
+      "error_q95": 0.011472732971212745,
+      "conditional_q95_CI95": [
+        0.011367844157500678,
+        0.011624576963856617
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test2",
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "FS",
+      "M": 10000,
+      "error_p025": 0.009977776531848406,
+      "error_median": 0.010310031244173689,
+      "error_p975": 0.010813623688289146,
+      "error_q95": 0.010735541721203707,
+      "conditional_q95_CI95": [
+        0.010548154645511513,
+        0.010861027889807254
+      ],
+      "pass_fraction_1percent": 0.05,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test2",
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "DH",
+      "M": 3000,
+      "error_p025": 0.002258703913650781,
+      "error_median": 0.002387989052518872,
+      "error_p975": 0.0025385910201126695,
+      "error_q95": 0.0025309551492749185,
+      "conditional_q95_CI95": [
+        0.0024879925809964884,
+        0.0025393317817346767
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test2",
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "DH",
+      "M": 5000,
+      "error_p025": 0.0017859377748612878,
+      "error_median": 0.0019043253791571188,
+      "error_p975": 0.0020246214810902084,
+      "error_q95": 0.0019986396957753947,
+      "conditional_q95_CI95": [
+        0.0019745298721445524,
+        0.0020357617570769255
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test2",
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "DH",
+      "M": 7500,
+      "error_p025": 0.0015594003833442728,
+      "error_median": 0.0016545995372574287,
+      "error_p975": 0.0017359577168178934,
+      "error_q95": 0.0017257648362237713,
+      "conditional_q95_CI95": [
+        0.0017124358790731426,
+        0.0017412360753103636
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test2",
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "DH",
+      "M": 10000,
+      "error_p025": 0.0015069381488141082,
+      "error_median": 0.0015838918007524427,
+      "error_p975": 0.001662474290885705,
+      "error_q95": 0.0016579727845328653,
+      "conditional_q95_CI95": [
+        0.0016354297766927562,
+        0.0016673517280132982
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test2",
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "FS",
+      "M": 3000,
+      "error_p025": 0.00118803884242819,
+      "error_median": 0.0014102006254697159,
+      "error_p975": 0.0019170214827626704,
+      "error_q95": 0.0017625804257178424,
+      "conditional_q95_CI95": [
+        0.0016345775163252737,
+        0.0019454110726932225
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test2",
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "FS",
+      "M": 5000,
+      "error_p025": 0.0011098587811273347,
+      "error_median": 0.0012506300869475325,
+      "error_p975": 0.0015066806111637627,
+      "error_q95": 0.0014838610073251257,
+      "conditional_q95_CI95": [
+        0.001444542763670117,
+        0.0015165345549273937
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test2",
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "FS",
+      "M": 7500,
+      "error_p025": 0.0010449874395388001,
+      "error_median": 0.0011280632409775143,
+      "error_p975": 0.0012221317873957606,
+      "error_q95": 0.001211095566250565,
+      "conditional_q95_CI95": [
+        0.0011997181467259972,
+        0.0012250982287613382
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test2",
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "FS",
+      "M": 10000,
+      "error_p025": 0.0009347782899262405,
+      "error_median": 0.0010137568274163635,
+      "error_p975": 0.001097790074068906,
+      "error_q95": 0.0010898248146641342,
+      "conditional_q95_CI95": [
+        0.0010679263422252259,
+        0.0010984148805441908
+      ],
+      "pass_fraction_1percent": 1.0,
+      "pass_fraction_halfpercent": 1.0
+    },
+    {
+      "test": "test2",
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "DH",
+      "M": 3000,
+      "error_p025": 0.02032120915500475,
+      "error_median": 0.020605421752903974,
+      "error_p975": 0.020979429861105816,
+      "error_q95": 0.02092256776528506,
+      "conditional_q95_CI95": [
+        0.02088544432326074,
+        0.020984973197539614
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test2",
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "DH",
+      "M": 5000,
+      "error_p025": 0.016357984832390933,
+      "error_median": 0.016609446037019096,
+      "error_p975": 0.016882856769413524,
+      "error_q95": 0.016796450891678635,
+      "conditional_q95_CI95": [
+        0.01675052298622944,
+        0.016898025076239245
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test2",
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "DH",
+      "M": 7500,
+      "error_p025": 0.013979827101456736,
+      "error_median": 0.014216976342391456,
+      "error_p975": 0.014583778810449907,
+      "error_q95": 0.014517285006698352,
+      "conditional_q95_CI95": [
+        0.01437573669850502,
+        0.014611646962213435
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test2",
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "DH",
+      "M": 10000,
+      "error_p025": 0.012612032294588776,
+      "error_median": 0.012886274498733398,
+      "error_p975": 0.01328681272732267,
+      "error_q95": 0.013266382782915581,
+      "conditional_q95_CI95": [
+        0.013065028680546908,
+        0.013302011773244363
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test2",
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "FS",
+      "M": 3000,
+      "error_p025": 0.014211050970980067,
+      "error_median": 0.01481581066072079,
+      "error_p975": 0.01566217234576397,
+      "error_q95": 0.015470808127221356,
+      "conditional_q95_CI95": [
+        0.015305866926340943,
+        0.015687508769530813
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test2",
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "FS",
+      "M": 5000,
+      "error_p025": 0.01168715360001443,
+      "error_median": 0.012430470381244205,
+      "error_p975": 0.012998990099356511,
+      "error_q95": 0.012876930015416062,
+      "conditional_q95_CI95": [
+        0.012726331575229448,
+        0.01301455144889521
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test2",
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "FS",
+      "M": 7500,
+      "error_p025": 0.010735209331010435,
+      "error_median": 0.011075263899798581,
+      "error_p975": 0.011570559615697699,
+      "error_q95": 0.011407916889571056,
+      "conditional_q95_CI95": [
+        0.01131306093555046,
+        0.011601406538275119
+      ],
+      "pass_fraction_1percent": 0.0,
+      "pass_fraction_halfpercent": 0.0
+    },
+    {
+      "test": "test2",
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "FS",
+      "M": 10000,
+      "error_p025": 0.009977776531848406,
+      "error_median": 0.010310031244173689,
+      "error_p975": 0.010813623688289146,
+      "error_q95": 0.010735541721203707,
+      "conditional_q95_CI95": [
+        0.01052381299855898,
+        0.010861027889807254
+      ],
+      "pass_fraction_1percent": 0.05,
+      "pass_fraction_halfpercent": 0.0
+    }
+  ],
+  "thresholds": [
+    {
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "DH",
+      "tolerance": 0.05,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "DH",
+      "tolerance": 0.02,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "DH",
+      "tolerance": 0.01,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "DH",
+      "tolerance": 0.005,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "FS",
+      "tolerance": 0.05,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "FS",
+      "tolerance": 0.02,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "FS",
+      "tolerance": 0.01,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "dispersed_without_replacement",
+      "quantity": "radial",
+      "method": "FS",
+      "tolerance": 0.005,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "DH",
+      "tolerance": 0.05,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "DH",
+      "tolerance": 0.02,
+      "smallest_tested_M_passing_both_test_seeds": 5000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "DH",
+      "tolerance": 0.01,
+      "smallest_tested_M_passing_both_test_seeds": null,
+      "reference_precision_gate_passed": false
+    },
+    {
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "DH",
+      "tolerance": 0.005,
+      "smallest_tested_M_passing_both_test_seeds": null,
+      "reference_precision_gate_passed": false
+    },
+    {
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "FS",
+      "tolerance": 0.05,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "FS",
+      "tolerance": 0.02,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "FS",
+      "tolerance": 0.01,
+      "smallest_tested_M_passing_both_test_seeds": null,
+      "reference_precision_gate_passed": false
+    },
+    {
+      "protocol": "dispersed_without_replacement",
+      "quantity": "joint",
+      "method": "FS",
+      "tolerance": 0.005,
+      "smallest_tested_M_passing_both_test_seeds": null,
+      "reference_precision_gate_passed": false
+    },
+    {
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "DH",
+      "tolerance": 0.05,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "DH",
+      "tolerance": 0.02,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "DH",
+      "tolerance": 0.01,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "DH",
+      "tolerance": 0.005,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "FS",
+      "tolerance": 0.05,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "FS",
+      "tolerance": 0.02,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "FS",
+      "tolerance": 0.01,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "contiguous",
+      "quantity": "radial",
+      "method": "FS",
+      "tolerance": 0.005,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "DH",
+      "tolerance": 0.05,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "DH",
+      "tolerance": 0.02,
+      "smallest_tested_M_passing_both_test_seeds": 5000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "DH",
+      "tolerance": 0.01,
+      "smallest_tested_M_passing_both_test_seeds": null,
+      "reference_precision_gate_passed": false
+    },
+    {
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "DH",
+      "tolerance": 0.005,
+      "smallest_tested_M_passing_both_test_seeds": null,
+      "reference_precision_gate_passed": false
+    },
+    {
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "FS",
+      "tolerance": 0.05,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "FS",
+      "tolerance": 0.02,
+      "smallest_tested_M_passing_both_test_seeds": 3000,
+      "reference_precision_gate_passed": true
+    },
+    {
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "FS",
+      "tolerance": 0.01,
+      "smallest_tested_M_passing_both_test_seeds": null,
+      "reference_precision_gate_passed": false
+    },
+    {
+      "protocol": "contiguous",
+      "quantity": "joint",
+      "method": "FS",
+      "tolerance": 0.005,
+      "smallest_tested_M_passing_both_test_seeds": null,
+      "reference_precision_gate_passed": false
+    }
+  ],
+  "limitations": [
+    "At M=10000 all test frames are used: variation then comes only from reference bootstrap, not new test samples.",
+    "Conditional finite-pool repeated-subset intervals, not 100 independent simulations.",
+    "Reference bootstrap uses 500-frame blocks and two reference seeds; inspect slow modes and block sensitivity.",
+    "Dispersed selection assumes an already available long trajectory; does not imply equal reduction in simulation time.",
+    "Threshold is grid-based and provisional; reference precision gate and scientific review required.",
+    "Both methods use identical frame indices and fixed resolution. Primary reference is independent DH, not FS."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "model": "gb2d",
+  "parameters": {
+    "N": 2048,
+    "rho": 0.12,
+    "T": 2.0,
+    "kappa": 3.0,
+    "equil": 40000,
+    "frames": 20000,
+    "stride": 10,
+    "seed": 410091,
+    "step": 0.25,
+    "turn": 0.7,
+    "L": 130.63945294843617,
+    "model": "planar_uniaxial_GB",
+    "kprime": 5.0,
+    "mu": 2.0,
+    "nu": 1.0,
+    "center_switch_on": 4.5,
+    "center_cutoff": 6.0,
+    "physical_branch": "r-sigma+1>0",
+    "units": "sigma=epsilon=kB=1",
+    "version": "gb_v1"
+  },
+  "source": "Simulations/GB_N2048_rho012_T200_seed410091/parameters.json",
+  "role": "reference"
+}

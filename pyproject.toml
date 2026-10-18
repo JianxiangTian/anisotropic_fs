@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anisotropic-force-sampling"
+version = "0.1.0"
+description = "Finite-domain orientation-resolved pair correlations in two and three dimensions"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Jianxiang Tian"}, {name = "Yuan Liu"}]
+dependencies = ["numpy>=1.26,<3", "numba>=0.60,<1", "scipy>=1.11,<2", "matplotlib>=3.8,<4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

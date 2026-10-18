@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-15T11:27:41.935845+08:00",
+  "scope": "Exploratory after primary results known; no new physical chains. Block-aligned contiguous and dispersed intact 100-frame blocks, NOT dispersed individual frames.",
+  "seeds": [
+    410131,
+    410132,
+    410133
+  ],
+  "M": [
+    100,
+    200,
+    500,
+    1000,
+    2000,
+    5000,
+    10000,
+    20000
+  ],
+  "repeats": 200,
+  "sample_rng": 810147,
+  "bootstrap_rng": 810148,
+  "reference_rng": 810149,
+  "bootstrap_repeats": 2000,
+  "reference_blocks": [
+    500,
+    1000,
+    2000,
+    4000
+  ],
+  "reference": "For each held-out seed, equal EDH means of other two 80k chains only. Same weighted NRMSE and domain as primary. Gaussian multiplier reference norm95 and compatibility as stage4; retain all failures.",
+  "sampling": "Common block indices across seeds and EDH/EFS. Ascending M, uniform 200 contiguous starts in 0..800-M/100; then 200 sorted no-replacement subsets of M/100 intact blocks. Blocks not asserted independent.",
+  "intervals": "Paired repeat bootstrap conditional on fixed pools and references. Not independent seed replication because rotations overlap. No universal CI or primary threshold substitution.",
+  "judgment": "Report all RMS ratios and conditional intervals, separate reference precision and compatibility. No new frame-saving claim from this block design; no M50. Preserve residual heterogeneity and all data."
+}

@@ -1,0 +1,40 @@
+{
+  "planar_GB_cases": 512,
+  "max_scaled_U_Fx_Fy_taui_tauj_errors": [
+    0.0,
+    0.0,
+    0.0,
+    1.7961290344247425e-15,
+    2.6645352591003757e-15
+  ],
+  "forbidden_components_abs_max": 0.0,
+  "coplanarity_Gram_residual_max": 5.551115123125783e-16,
+  "radial_manufactured_checks": {
+    "2": {
+      "max_point_error": 2.220446049250313e-16,
+      "max_shell_error": 2.220446049250313e-16
+    },
+    "3": {
+      "max_point_error": 2.220446049250313e-16,
+      "max_shell_error": 1.1102230246251565e-16
+    }
+  },
+  "wrong_3D_kernel_with_2D_anchor_abs_error": 0.0024459586543305045,
+  "planar_Fourier_torque_identity_errors": {
+    "1,0": 5.551115123125783e-17,
+    "0,1": 3.4867510341210807e-17,
+    "1,-1": 2.8622937353617316e-18,
+    "2,1": 8.744371750416243e-18
+  },
+  "nematic_angular_example": {
+    "g_at_planar_psi0": 2.718281828459045,
+    "g_psi_uniform_average": 1.75338765437709
+  },
+  "scope": "Pair geometry and planar energy/force/torque restriction, manufactured radial finite-domain algebra, and planar angular weak identities. Not new MC or proof that bulk 3D pair correlations equal planar ones. Pair code shares scalar GB geometry; analytic derivation remains essential.",
+  "source_hashes": {
+    "scripts/gb_pair.py": "93b64510ce0aceff6d3611c9804fced0e8ee5047c4d4f5c53b7eecbe7b4e5da6",
+    "scripts/gb3d_pair.py": "c9208171bc5ddd3985a5e3bcef89d048fe7e8a648ec47e500e33815d00721e4b",
+    "scripts/check_efs_dimensional_reduction.py": "b31cbc20dea714b5126bff174a6b5691d584a7c6f8320f153b44a3e953911a8c"
+  },
+  "passed": true
+}
