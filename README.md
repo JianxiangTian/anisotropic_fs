@@ -1,92 +1,39 @@
-# Finite-domain force sampling for anisotropic particles
+# Resolution dependence of force sampling for orientation-resolved pair correlations in anisotropic fluids
 
-Code and data accompanying **Finite-domain force sampling of orientation-resolved pair correlations in two and three dimensions**, by Jianxiang Tian and Yuan Liu.
+Jianxiang Tian and Yuan Liu. Reproducibility package for the revised manuscript, version 3, 25 November 2026.
 
-This package implements extended direct histograms (EDH) and finite-domain extended force sampling (EFS) for planar dimers, planar Gay–Berne particles, and three-dimensional Gay–Berne particles. It provides simulation and analysis tools, example configurations, and scripts for reproducing the paper figures and statistics.
+## Reproduce the paper
 
-## Installation
+Extract the archive into a writable directory. From that directory, install the requirements in a Python environment and run:
 
-Use Python 3.11 or newer. Run the following commands from the repository root.
-
-```bash
-python -m venv .venv
+```sh
+python -m pip install -r requirements.txt
+python reproduce.py all
 ```
 
-Activate the environment on Windows PowerShell:
+The release was tested on Windows with Python 3.14, NumPy 2.4.4, Matplotlib 3.10.9 and Numba 0.68.1. Install Times New Roman locally for manuscript-matched rendering. The font is checked at plot startup. No external data downloads or model fitting are needed. Allow several minutes and about 2 GB of available memory; NumPy is run with one OpenBLAS thread for the main analysis.
 
-```powershell
-.venv\Scripts\Activate.ps1
-```
+| Command | Outputs |
+| --- | --- |
+| `python reproduce.py figures` | Four main and three supplementary figures under `outputs/figures`, and CSV values for Tables I and S1–S6 under `outputs/paper_tables`. |
+| `python reproduce.py statistics` | Recompute the planar resolution, alignment, covariance, radial-region and sensitivity analyses; compare every column of seven CSV tables with the archived outputs. |
+| `python reproduce.py torque` | Recompute the first 100-frame test block from planar GB coordinates and verify both direct and torque-weighted profiles for all 218 radial shells. |
+| `python reproduce.py all` | Run all three operations. |
 
-On Linux or macOS:
+## Data and figure map
 
-```bash
-source .venv/bin/activate
-```
+- **Fig. 1.** Pair geometry and the exact planar shell-averaged force kernel at a specified source separation. Drawn directly by `scripts/figures.py`.
+- **Fig. 2.** Within-cell radial shape and angular-mean errors at matched resolution. The input table `results/joint_errors.csv` is reproduced by `scripts/analyse.py`.
+- **Fig. 3.** Direct counts, radial force with either anchor, and shellwise torque for the planar alignment mode. The two test chains have 10,000 frames each and the two independent reference chains have 20,000 each. The error and profile tables contain paired block-bootstrap results.
+- **Fig. 4.** Three-dimensional radial and alignment profiles from 500-frame block means and the radial and joint EFS/EDH ratios from the repeated selections in `gb3d_eff.json`.
+- **Fig. S1.** The planar profile files contain 500-frame block means from the demonstration runs, exact shell edges and the selected angular-section index. The GB center is 2.4875.
+- **Figs. S2 and S3.** Archived error summaries for dimers, planar GB and three-dimensional GB. These and the associated thresholds supply Table I.
+- **Tables S3–S6.** Computed from the supplied error tables. Section-wise contributions to the full-annulus MSE difference include the appropriate fraction of the full annular area.
+- **Timing.** The measured per-frame stage times for the paper's coordinate-based benchmark are in `data/timing_grid.json`. Absolute timings depend on hardware.
 
-Then install the package:
+## Statistical inputs
 
-```bash
-python -m pip install -e .
-```
+For each planar seed, the edh and efs files contain 100-frame block means with radial shell as the second axis and the two orientation indices as the last axes. Each file holds at most 20 blocks, ordered by the numeric suffix (starting block, zero-based). Only direct angular counts enter the reference profiles. The planar GB mode files store the actual real Fourier mode (1, −1) block means in direct, count-anchor radial force, torque-anchor radial force, and (for test seeds) shellwise torque order. The coordinate example is the first 100 retained frames of seed 410082. The complete planar statistics restart from the distributed block means. Full MC trajectory generation and production-scale torque accumulation are upstream operations. The established model implementations and original trajectory protocols are also available in the [model repository at the baseline revision](https://github.com/JianxiangTian/anisotropic_fs/tree/0ad2402).
 
-Dependencies are listed in `requirements.txt`. The tested Python 3.12 environment is recorded in `requirements-tested.txt`.
+Each window contains contiguous 100-frame blocks; test seeds are evaluated separately. Reference chains are combined with equal weights. The statistical scripts specify the resampling designs, random seeds, tested widths and intervals. The original sample-count and three-dimensional confidence bounds are distributed as evaluated summaries. The release recomputes the displayed count thresholds from them. The timing and three-dimensional endpoint measurements are archived results. SHA256SUMS identifies the release inputs and scripts. Figure binaries can have different metadata across runs; statistical results are checked numerically.
 
-## Reproduce figures and statistics
-
-```bash
-python scripts/reproduce_figures.py
-python scripts/reproduce_statistics.py
-```
-
-The figure script produces six main figures and three supplementary figures in EPS, PDF, and PNG formats in `outputs/figures`.
-
-The statistics script calculates reference uncertainties, efficiency confidence intervals, sample-count thresholds, and the primary and secondary statistical tests from the supplied data. Results are checked against the reference values and saved in `outputs/statistics`, including `table_II.csv` and `reproduction_report.json`.
-
-See the [figure and table index](docs/PAPER_MAP.md) for the input files associated with each result, and [data and analysis details](docs/REPRODUCIBILITY.md) for array layouts and statistical conventions.
-
-## Analyze an example configuration
-
-```bash
-python scripts/analyze_example.py --model dimer2d
-python scripts/analyze_example.py --model gb2d
-python scripts/analyze_example.py --model gb3d
-```
-
-Each command evaluates the EDH and EFS estimators for the selected model and saves the arrays in `outputs/examples`. The estimator interface uses a dimer bond length of 0.5 and a Gay–Berne aspect ratio of 3, matching the paper.
-
-## Run a simulation
-
-```bash
-python scripts/simulate.py --config configs/runs/dimer2d_310053.json --out runs/dimer
-python scripts/analyze_trajectory.py --model dimer2d --run runs/dimer --out outputs/dimer_blocks
-```
-
-Choose a configuration from `configs/runs` and a new output directory. The trajectory analysis writes block-averaged EDH and EFS estimates. The block size defaults to 100 configurations and can be set with `--block-size`.
-
-For three-dimensional chain continuation, use `scripts/continue_gb3d.py`. Command options are available through `--help`.
-
-## Check the installation and data
-
-```bash
-python scripts/verify_integrity.py
-python -m unittest discover -s tests -v
-```
-
-The integrity check verifies file hashes. The numerical tests cover example estimates, normalization identities, force and torque derivatives, the planar restriction, and the finite-shell kernel.
-
-## Package contents
-
-| Directory | Contents |
-|---|---|
-| `src/anisotropic_fs` | Pair interactions, samplers, estimators, and statistical routines |
-| `scripts` | Simulation, analysis, figure generation, and verification commands |
-| `configs` | Model parameters, run configurations, and analysis protocols |
-| `data` | Example configurations, block averages, repeat errors, and reference results |
-| `tests` | Numerical regression and identity checks |
-| `docs` | Data formats and figure/table index |
-| `provenance` | Source mappings, environment information, validation results, and file hashes |
-
-## Citation
-
-Please cite the associated paper when using this code and data. Software citation metadata are provided in `CITATION.cff`.

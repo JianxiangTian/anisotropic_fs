@@ -1,16 +1,11 @@
 cff-version: 1.2.0
-message: "Please cite the associated manuscript and identify this software version when using these materials."
+message: "Please cite this version when using the data or analysis code."
+title: "Resolution dependence of force sampling for orientation-resolved pair correlations in anisotropic fluids: reproducibility package"
 type: software
-title: "Finite-domain force sampling of orientation-resolved pair correlations in two and three dimensions"
-version: 0.1.0
+version: "3.0"
 authors:
   - family-names: Tian
     given-names: Jianxiang
   - family-names: Liu
     given-names: Yuan
-abstract: "Finite-domain EDH/EFS estimators, manuscript reproduction inputs, and simulation entry points for apolar uniaxial particles."
-keywords:
-  - force sampling
-  - anisotropic particles
-  - pair correlations
-  - Gay-Berne
+repository-code: "https://github.com/JianxiangTian/anisotropic_fs"
