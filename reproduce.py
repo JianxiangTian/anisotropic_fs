@@ -1,4 +1,4 @@
-"""Run figures, statistics, or the coordinate-level torque validation."""
+"""Reproduce the figures, statistics, torque validation, and Sec. S7."""
 from pathlib import Path
 import argparse
 import csv
@@ -42,7 +42,7 @@ def verify_statistics():
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("task", choices=["all","figures","statistics","torque"], nargs="?", default="all")
+    parser.add_argument("task", choices=["all","figures","statistics","torque","s7"], nargs="?", default="all")
     task = parser.parse_args().task
     verify_data()
     if task in ("statistics","all"):
@@ -56,6 +56,13 @@ def main():
         run("torque_example.py")
     if task in ("all","figures","statistics"):
         run("paper_tables.py")
+    if task in ("s7", "all"):
+        TABLES.mkdir(parents=True, exist_ok=True)
+        subprocess.run(
+            [sys.executable, "-B", str(ROOT / "s7" / "reproduce_s7.py"),
+             "--output", str(TABLES / "s7_reproduced.csv")],
+            cwd=ROOT, check=True,
+        )
 
 
 if __name__ == "__main__":

@@ -1,24 +1,25 @@
-# Resolution dependence of force sampling for orientation-resolved pair correlations in anisotropic fluids
+# anisotropic_fs
 
-Jianxiang Tian and Yuan Liu. Reproducibility package for the revised manuscript, version 3, 25 November 2026.
+Data and code for *Resolution dependence of force sampling for orientation-resolved pair correlations in anisotropic fluids* by Jianxiang Tian and Yuan Liu.
 
 ## Reproduce the paper
 
-Extract the archive into a writable directory. From that directory, install the requirements in a Python environment and run:
+From the repository root, install the requirements in a Python environment and run the following commands.
 
 ```sh
 python -m pip install -r requirements.txt
 python reproduce.py all
 ```
 
-The release was tested on Windows with Python 3.14, NumPy 2.4.4, Matplotlib 3.10.9 and Numba 0.68.1. Install Times New Roman locally for manuscript-matched rendering. The font is checked at plot startup. No external data downloads or model fitting are needed. Allow several minutes and about 2 GB of available memory; NumPy is run with one OpenBLAS thread for the main analysis.
+The code was tested on Windows with Python 3.14, NumPy 2.4.4, Matplotlib 3.10.9 and Numba 0.68.1. The plotting scripts check that Times New Roman is installed. All inputs for these commands are included. Allow several minutes and about 2 GB of available memory. The main analysis uses one OpenBLAS thread.
 
 | Command | Outputs |
 | --- | --- |
 | `python reproduce.py figures` | Four main and three supplementary figures under `outputs/figures`, and CSV values for Tables I and S1–S6 under `outputs/paper_tables`. |
 | `python reproduce.py statistics` | Recompute the planar resolution, alignment, covariance, radial-region and sensitivity analyses; compare every column of seven CSV tables with the archived outputs. |
 | `python reproduce.py torque` | Recompute the first 100-frame test block from planar GB coordinates and verify both direct and torque-weighted profiles for all 218 radial shells. |
-| `python reproduce.py all` | Run all three operations. |
+| `python reproduce.py s7` | Reproduce the full-interval and interior error decompositions in `outputs/tables/s7_reproduced.csv`. |
+| `python reproduce.py all` | Run all four operations. |
 
 ## Data and figure map
 
@@ -28,12 +29,13 @@ The release was tested on Windows with Python 3.14, NumPy 2.4.4, Matplotlib 3.10
 - **Fig. 4.** Three-dimensional radial and alignment profiles from 500-frame block means and the radial and joint EFS/EDH ratios from the repeated selections in `gb3d_eff.json`.
 - **Fig. S1.** The planar profile files contain 500-frame block means from the demonstration runs, exact shell edges and the selected angular-section index. The GB center is 2.4875.
 - **Figs. S2 and S3.** Archived error summaries for dimers, planar GB and three-dimensional GB. These and the associated thresholds supply Table I.
+- **Sec. S7.** The three-dimensional full-interval and interior RMS ratios and the contributions of the angular-cell mean and radial shape to the squared-error reduction. See the [S7 instructions and input description](s7/README.md) for calculation from both the compact data and the original shell and angular bins.
 - **Tables S3–S6.** Computed from the supplied error tables. Section-wise contributions to the full-annulus MSE difference include the appropriate fraction of the full annular area.
 - **Timing.** The measured per-frame stage times for the paper's coordinate-based benchmark are in `data/timing_grid.json`. Absolute timings depend on hardware.
 
 ## Statistical inputs
 
-For each planar seed, the edh and efs files contain 100-frame block means with radial shell as the second axis and the two orientation indices as the last axes. Each file holds at most 20 blocks, ordered by the numeric suffix (starting block, zero-based). Only direct angular counts enter the reference profiles. The planar GB mode files store the actual real Fourier mode (1, −1) block means in direct, count-anchor radial force, torque-anchor radial force, and (for test seeds) shellwise torque order. The coordinate example is the first 100 retained frames of seed 410082. The complete planar statistics restart from the distributed block means. Full MC trajectory generation and production-scale torque accumulation are upstream operations. The established model implementations and original trajectory protocols are also available in the [model repository at the baseline revision](https://github.com/JianxiangTian/anisotropic_fs/tree/0ad2402).
+For each planar seed, the EDH and EFS files contain 100-frame block means with radial shell as the second axis and the two orientation indices as the last axes. Each file holds at most 20 blocks, ordered by the numeric suffix, which gives the zero-based starting block. The reference profiles use direct angular counts. The planar GB mode files store block means of the real Fourier mode (1, −1), ordered as direct counts, count-anchored radial force, torque-anchored radial force, and shellwise torque for the test seeds. The coordinate example contains the first 100 retained frames of seed 410082. The planar statistics are recomputed from the supplied block means. The [simulation code and trajectory protocols](https://github.com/JianxiangTian/anisotropic_fs/tree/0ad2402) document how the blocks were generated.
 
-Each window contains contiguous 100-frame blocks; test seeds are evaluated separately. Reference chains are combined with equal weights. The statistical scripts specify the resampling designs, random seeds, tested widths and intervals. The original sample-count and three-dimensional confidence bounds are distributed as evaluated summaries. The release recomputes the displayed count thresholds from them. The timing and three-dimensional endpoint measurements are archived results. SHA256SUMS identifies the release inputs and scripts. Figure binaries can have different metadata across runs; statistical results are checked numerically.
+The planar windows contain contiguous 100-frame blocks, and the test seeds are evaluated separately. Reference chains are combined with equal weights. The statistical scripts specify the resampling designs, random seeds, tested widths and intervals. The package recomputes the count thresholds from the supplied confidence bounds. The timing and three-dimensional endpoint files contain the reported measurements. `SHA256SUMS` lists the digests of the distributed files.
 
